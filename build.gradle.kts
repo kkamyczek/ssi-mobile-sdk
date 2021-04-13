@@ -7,6 +7,7 @@ val kotlinxCourutinesVersion = "1.4.2"
 val uuidVersion = "0.2.3"
 val junitVersion = "4.13"
 
+
 plugins {
     val kotlinVersion = "1.4.30-M1"
     kotlin("multiplatform") version kotlinVersion
@@ -48,10 +49,12 @@ kotlin {
         publishLibraryVariantsGroupedByFlavor = true // This line
     }
 
-    ios {  // Replace with a target you need.
+    ios {
         compilations.getByName("main") {
             val indylib by cinterops.creating {
                 defFile(project.file("../ssi-mobile-sdk/indylib/indylib.def"))
+                extraOpts("-libraryPath", "$projectDir/indylib")
+                extraOpts("-compiler-options", "-std=c99 -I$projectDir/indylib")
             }
         }
     }
@@ -60,6 +63,7 @@ kotlin {
         homepage = "https://github.com/Kotlin/kotlin-with-cocoapods-sample"
         ios.deploymentTarget = "13.5"
     }
+
 
     val hostOs = System.getProperty("os.name")
     val isMingwX64 = hostOs.startsWith("Windows")
@@ -78,7 +82,6 @@ kotlin {
                 implementation ("com.benasher44:uuid:$uuidVersion")
                 //TODO: check why jdk dependency is added in common module
                 implementation(kotlin("stdlib-jdk8"))
-
             }
         }
         val commonTest by getting {
@@ -114,7 +117,6 @@ kotlin {
                 implementation("com.squareup.okhttp3:okhttp:$okhttpVersion")
                 implementation("org.slf4j:slf4j-simple:1.7.26")
                 implementation("net.java.dev.jna:jna:5.8.0@aar")
-
 
             }
         }

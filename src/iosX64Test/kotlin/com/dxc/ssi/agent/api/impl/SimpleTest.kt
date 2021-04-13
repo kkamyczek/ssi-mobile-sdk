@@ -11,10 +11,8 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import platform.Foundation.*
-import platform.posix.nanosleep
 import platform.posix.memcpy
 import platform.posix.sleep
-import platform.posix.timespec
 import kotlin.native.concurrent.AtomicInt
 import kotlin.native.concurrent.AtomicReference
 import kotlin.test.Test
@@ -25,9 +23,9 @@ val rw = ReadWrite()
 
 class Workaround() {
 
-    val callbackCompleted = AtomicReference<Boolean>(false)
-    val atomicInt = AtomicInt(0)
-    val atomicString = AtomicReference<String>("")
+    private val callbackCompleted = AtomicReference(false)
+    private val atomicInt = AtomicInt(0)
+    private val atomicString = AtomicReference("")
 
     fun setIntValue(intValue : Int) {
         this.atomicInt.value = intValue
@@ -62,13 +60,13 @@ class Workaround() {
 val workaround = Workaround()
 
 class ReadWrite {
-    fun String.nsdata(): NSData? =
+    private fun String.nsdata(): NSData? =
         NSString.create(string = this).dataUsingEncoding(NSUTF8StringEncoding)
 
-    fun NSData.string(): String? =
+    private fun NSData.string(): String? =
         NSString.create(data = this, encoding = NSUTF8StringEncoding)?.toString()
 
-    var atomic: AtomicReference<NSData?> = AtomicReference("".nsdata())
+    private var atomic: AtomicReference<NSData?> = AtomicReference("".nsdata())
     fun read(): String {
         return atomic.value?.string()!!
     }
@@ -121,8 +119,8 @@ class IosIndyTest {
             val config = "{\"id\":\"testWalletName${pointer}\",\"storage_type\":\"default\"}"
             val credentials = "{\"key\":\"testWalletPassword${pointer}\"}"
             val myExit_cb: MyCallbackWallet = staticCFunction(fun(
-                xcommand_handle: indy_handle_t,
-                err: indy_error_t,
+                _: indy_handle_t,
+                _: indy_error_t,
             ) {
                 return
             })
@@ -175,13 +173,13 @@ class IosIndyTest {
         ) -> indy_bool_t>>? = null
         val flushFn: CPointer<CFunction<(COpaquePointer?) -> Unit>>? = null
         val myExitCallback = staticCFunction(fun(
-            log: CPointer<out CPointed>?,
-            elem: indy_u32_t,
-            pointer: CPointer<ByteVar>?,
-            val1: CPointer<ByteVar>?,
-            val2: CPointer<ByteVar>?,
-            val3: CPointer<ByteVar>?,
-            number: indy_u32_t,
+            _: CPointer<out CPointed>?,
+            _: indy_u32_t,
+            _: CPointer<ByteVar>?,
+            _: CPointer<ByteVar>?,
+            _: CPointer<ByteVar>?,
+            _: CPointer<ByteVar>?,
+            _: indy_u32_t,
         ) {
             initRuntimeIfNeeded()
             return
@@ -196,8 +194,8 @@ class IosIndyTest {
         val config = "{\"id\":\"testWalletName${pointer}\",\"storage_type\":\"default\"}"
         val credentials = "{\"key\":\"testWalletPassword${pointer}\"}"
         val myExit_cb: MyCallbackWallet = staticCFunction(fun(
-            xcommand_handle: indy_handle_t,
-            err: indy_error_t,
+            _: indy_handle_t,
+            _: indy_error_t,
         ) {
             initRuntimeIfNeeded()
             return
@@ -210,9 +208,9 @@ class IosIndyTest {
         )
         sleep(8)
         val myExit_cb2: MyCallbackWallet2 = staticCFunction(fun(
-            command: indy_handle_t,
-            err: indy_error_t,
-            handle: indy_handle_t
+            _: indy_handle_t,
+            _: indy_error_t,
+            _: indy_handle_t
         ) {
             initRuntimeIfNeeded()
             return
@@ -230,8 +228,8 @@ class IosIndyTest {
         val wallethandle = 3
         memScoped {
             val callback: MyCallback = staticCFunction(fun(
-                xcommand_handle: indy_handle_t,
-                err: indy_error_t,
+                _: indy_handle_t,
+                _: indy_error_t,
                 did: CPointer<ByteVar>?,
                 verkey: CPointer<ByteVar>?
             ) {
@@ -242,7 +240,7 @@ class IosIndyTest {
                 rw.save("Did:${didData} VerKey:${verkeyData}")
                 return
             })
-            indy_create_and_store_my_did(
+            val result = indy_create_and_store_my_did(
                 commandHandle,
                 wallethandle,
                 didJson,
@@ -250,42 +248,7 @@ class IosIndyTest {
             )
             sleep(8)
             println(rw.read())
-
-
-            val data =
-                "{\"@type\":\"https://didcomm.org/connections/1.0/request\",\"@id\":\"0b3a5812-08b9-49ea-90fa-8c275eb970bb\",\"label\":\"Holder\",\"imageUrl\":null,\"connection\":{\"DID\":\"UjoxXVTrTEVtxiL3evhJeD\",\"DIDDoc\":{\"@context\":\"https://w3id.org/did/v1\",\"id\":\"UjoxXVTrTEVtxiL3evhJeD\",\"publicKey\":[{\"id\":\"UjoxXVTrTEVtxiL3evhJeD\",\"type\":\"Ed25519VerificationKey2018\",\"controller\":\"UjoxXVTrTEVtxiL3evhJeD\",\"publicKeyBase58\":\"G7reKBYB6ogQoWsa4o8Nz6wbSBzF9ui8DtzNZ7sXTfJW\"}],\"service\":[{\"id\":\"UjoxXVTrTEVtxiL3evhJeD;indy\",\"type\":\"IndyAgent\",\"priority\":0,\"recipientKeys\":[\"G7reKBYB6ogQoWsa4o8Nz6wbSBzF9ui8DtzNZ7sXTfJW\"],\"serviceEndpoint\":\"ws://test81564:8123\"}]}}}"
-            val byteArrray = data.toByteArray()
-            val recipientVk = "[\"AVGGq5RRPkF7vMqD5niJzbr5y9cwWdGGPYfygJso13GT\"]"
-            val senderVk = "G7reKBYB6ogQoWsa4o8Nz6wbSBzF9ui8DtzNZ7sXTfJW"
-            val commandHandle = 3
-
-            //{"protected":"eyJlbmMiOiJ4Y2hhY2hhMjBwb2x5MTMwNV9pZXRmIiwidHlwIjoiSldNLzEuMCIsImFsZyI6IkFub25jcnlwdCIsInJlY2lwaWVudHMiOlt7ImVuY3J5cHRlZF9rZXkiOiJuQ3Z4VUlad01rOU5DNEw1SmNPYUwtODBJU1ZRcHRRUnkxTWg3ZTkzWjNxZ05ySFZmR0ExQm9zTWN2d3RtdXBlMHNEaC1LbnZXX2R2RHU2c2dsMUpINnZzNVF4OXhYMVA3ejVhcl9iYkFHdz0iLCJoZWFkZXIiOnsia2lkIjoiSDZhajRWREZLZTFUN01COU1qcGlaUDU3Q1ZaMm1XNkxrb0JFTW41ZGM0QkUifX1dfQ==","iv":"Ld2YxKTXQPV2gPMe","ciphertext":"Z0rjwlbBV1udc-fu0FxFz9wnRK383IuHlOC8tv7_pMMghBtEKwf0YtWh2e_ZWqpFHKiNwEqzBfhUFV17iVrJDyIOM7NTidzwd_wRilchmo-vqEG4T9DdhMsKvdhUP2PfSdQSxDb0Qd39GCVL6OW2ChM0rkE9Yuxh-OFC2DTB0gZUDdWdg69XTVBkL8BKtPu0n5-zAGgmqgaFmP8p92iG3iZS5oIlGc3B_wUink2l0GcVg4VDz-PZq7NLIJDLtDxX7vQ7P-4JAp_YODeACLgM03UjHQVXXzdL4-A7Vynx4zgB-oIxVnUhUeV6q6j6VnB4rBEpPOxXOHdPbn7DyNCzyI3zBkOn4vmlbCWCLReKF_TINbj8IFobJPht8kqlh_17SvDQrPNkALrTOGTT_dZgIiw41AtcMkYYfFMb6QQcS39VTYKK_6N1N81EZnSBydEPke0bgLoA93W9KWYPt1xLvxyvG8YDizXQdoFWXk99nfmVilhG3pzoDPCkyLpGR9kfsi3FlMzqIr_d9cZN7QJ_HPfIgTS1eeZAYLFeVibD12u4ZQIdLZMJeI07mqc5tKnwkzXWUY_FNqHmVlB7CGCo4MEG-wBIUcF-KLh_0lm4sSNzjTID2rc-k_gimhwPUMBm59HPcWRTUYLrpMAlOy3f6DoS5_4Sy2O4ddKSw611lyvV4_AIuWFjoeTN9StCPxYob0DuM6MqZsNNFVQNdUTYXwk9mw6kM9x9Q5lBnf684UdRFjGr4NyhJDdinYEeh0c5MEesDW_P9eJ6wL9U1tHLDXScOSFCCIbdmXVyioOc6skieKVJz15CPVCOXZRGxYGB25WRua7tSGVTXNXcIMs2xA_wz4Xdh8c-7OxC4akpecOgcen5hb_f2XxktyP-rcN4r2G0QuLh-MT3yiAP-I8vnwWWoiqemg2vYUU_cadocJwUl-9N4if1R_20_oFCMBELABRRzAmRcWfoJyH4WajoCHVa-IfMfJAe3Q9ZrhFUD4biVVbJuky3S_bBjp6YBQeti6hAUBXc6W_rZorxn7Fp-U93GDRrZwqhUrG1zzjibW2nbnfm7jYqmeOe6tAH2Q10db2YJDxM0pCspRohSI_vC4lnszsURMIoswPVwTDuBR2GTbQptaZlJ8ZH98GtlS9V2ArHH6A2UZ-UIXf2shhj745c7YvNLGRvMl7dSb8gpC1hvDMb8GjwhlqPzrb0X2xkY3OrbbVs0hJ1JQ5tEQmbvCS02nUn6HR0-RYxM4R3UCNDEaFxd5oXU1Xfv1-OmpHLXClbBSz3TFk-2eLUsipg9xXt9V3WNfLK5PPxXgjorNnv7rZK13sYSMxj3crGIFCbBSZfwPzZqVx-ZX7HPZLw_uFbZa5CK0W-rVb234tNcPS3nQZUu8mnWaw-E2_KuwcvW-rz8fLs1ywWdGaFXsm17LX6zZiyOGACzCOOvlCr-OuOOhPIE1DLMUyr47oT4YV1T16QTwgHnJlSLF53ddB0h_7fwO85Nc1rziX76MGfK236__o48NBIdCiJfTuUeA9wJG73QYGlefDVOi47x6wBcGM_tX744XjENI8tQ5XEEpb_NNlBiKzpmrvaAVDLAVwBYcmZAsph0vYOw4cGlfhTLeFDdEFEAHH5SWTVdpdiJ4mokHJmMQkCu4wIZ41wa9OX3vMpCosygW5tTqhcA9N7lPudyHsrrASXl6d73rRQsi5EhDT-eTuMhdJGI7Th-IvoHL9VvyCuB5UmBgijSJbks3hmbn90Nz0F4POt-d-nXaegakfSKEO9K2vxEYMFvGziweyiY3pgN2OzaTlw5NlGWmysAbuS-8K97LJI6IKFVqyvPGSZLiiIj4d5VVTIBGAxU2kk4RtKRXi9SemQhQQai4FbkQ8mz7LJHbtkFpHuUi5y24PXT3xl53fqqlI3pa1dug5UHZNFHYQIScTf2gTt1QmnG-4iJYmrL7RioIEoUa7BdRHurMgFElqZ__QKq9PEDDoc3z-kItBPAe_a4s1YbE_WpvvbO7QXge0tmbApuqAI4-68ZDSYhoYjIxGeJY8DqtWsSTbOMCZhmnjTjbf2bvISzBFQnPi8S4OyYrxcVMKO0OPow_ZAarY=","tag":"3EoGg7faQj1atxoHqlGxqg=="}
-            val packMessageCb: CPointer<CFunction<(indy_handle_t, indy_error_t, CPointer<indy_u8_tVar>?, indy_u32_t) -> Unit>>? =
-                staticCFunction(fun(
-                    _: indy_handle_t,
-                    er: indy_error_t,
-                    data: CPointer<indy_u8_tVar>?,
-                    un: indy_u32_t
-                ) {
-                    initRuntimeIfNeeded()
-                    //rw2.save(data as ByteArray)
-                    var d = data?.readBytes(5)
-                    println(d)
-                    return
-                })
-            val result = indy_pack_message(
-                commandHandle,
-                wallethandle,
-                byteArrray.toUByteArray().refTo(0) as CValuesRef<indy_u8_tVar /* = UByteVarOf<UByte> */>?,
-                byteArrray.size.toUInt(),
-                recipientVk,
-                senderVk,
-                packMessageCb
-            )
-            // rw2.read()
-            sleep(8)
-            if (result.toInt() != 0)
-                throw Exception("PackException")
+            assert(result.toInt().equals(0))
         }
     }
 
@@ -323,7 +286,6 @@ class IosIndyTest {
 
     @ExperimentalUnsignedTypes
     @Test
-    @Ignore
     fun test_indy_array() {
 
         memScoped {
@@ -338,13 +300,13 @@ class IosIndyTest {
             ) -> indy_bool_t>>? = null
             val flushFn: CPointer<CFunction<(COpaquePointer?) -> Unit>>? = null
             val myExitCallback = staticCFunction(fun(
-                log: CPointer<out CPointed>?,
-                elem: indy_u32_t,
+                _: CPointer<out CPointed>?,
+                _: indy_u32_t,
                 pointer: CPointer<ByteVar>?,
                 val1: CPointer<ByteVar>?,
                 val2: CPointer<ByteVar>?,
                 val3: CPointer<ByteVar>?,
-                number: indy_u32_t,
+                _: indy_u32_t,
             ) {
                 initRuntimeIfNeeded()
                 println(pointer?.toKString())
@@ -395,7 +357,7 @@ class IosIndyTest {
             sleep(6)
 
             val myExit_cbo1: MyCallbackWallet2 = staticCFunction(fun(
-                command: indy_handle_t,
+                _: indy_handle_t,
                 err: indy_error_t,
                 handle: indy_handle_t
             ) {
@@ -477,7 +439,7 @@ class IosIndyTest {
             sleep(6)
 
             val myExit_cbo2: MyCallbackWallet2 = staticCFunction(fun(
-                command: indy_handle_t,
+                _: indy_handle_t,
                 err: indy_error_t,
                 handle: indy_handle_t
             ) {
@@ -500,7 +462,7 @@ class IosIndyTest {
             println(walletId)
             val myExit_cbk2: CPointer<CFunction<(indy_handle_t /* = Int */, indy_error_t /* = UInt */, CPointer<ByteVar /* = ByteVarOf<Byte> */>?) -> Unit>>? =
                 staticCFunction(fun(
-                    command: indy_handle_t,
+                    _: indy_handle_t,
                     err: indy_error_t,
                     handle: CPointer<ByteVar>?
                 ) {
@@ -538,8 +500,8 @@ class IosIndyTest {
 
             val packMessageCb: CPointer<CFunction<(indy_handle_t, indy_error_t, CPointer<indy_u8_tVar>?, indy_u32_t) -> Unit>>? =
                 staticCFunction(fun(
-                    indy: indy_handle_t,
-                    error: indy_error_t,
+                    _: indy_handle_t,
+                    _: indy_error_t,
                     data: CPointer<indy_u8_tVar>?,
                     size: indy_u32_t
                 ) {
@@ -580,6 +542,7 @@ class IosIndyTest {
 
 
     @Test
+    @Ignore
     fun simpleTest() {
 
 
@@ -608,7 +571,6 @@ class IosIndyTest {
 
             workaround.setCallbackCompleted()
         }
-
 
 
         indy_create_wallet(commandHandle, walletConfigJson, walletPasswordJson, callback)
@@ -662,6 +624,7 @@ class IosIndyTest {
 
 
     @Test
+    @Ignore
    fun concurrencyTest() {
         println("Started")
        val channel = Channel<Int>()

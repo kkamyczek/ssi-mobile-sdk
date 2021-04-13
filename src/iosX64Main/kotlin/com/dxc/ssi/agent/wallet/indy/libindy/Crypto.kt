@@ -11,12 +11,12 @@ import kotlin.native.concurrent.AtomicInt
 import kotlin.native.concurrent.AtomicReference
 import kotlin.native.concurrent.freeze
 
-class Workaround() {
+class Workaround {
 
-    val callbackCompleted = AtomicReference<Boolean>(false)
-    val atomicInt = AtomicInt(0)
-    val atomicString = AtomicReference<String>("")
-    val atomicByteArray = AtomicReference<ByteArray>(ByteArray(10).freeze())
+    private val callbackCompleted = AtomicReference(false)
+    private val atomicInt = AtomicInt(0)
+    private val atomicString = AtomicReference("")
+    private val atomicByteArray = AtomicReference(ByteArray(10).freeze())
 
     fun setIntValue(intValue: Int) {
         this.atomicInt.value = intValue
@@ -81,7 +81,6 @@ val rwStringUnPack = SimpleReadWrite()
 
 actual class Crypto {
     actual companion object {
-
         //@ExperimentalUnsignedTypes
         @OptIn(ExperimentalUnsignedTypes::class)
         actual fun packMessage(
@@ -97,7 +96,6 @@ actual class Crypto {
                 val thisCommandHandle = Api.atomicInteger.value++
 
                 val uByteMessage = message.toUByteArray()
-
 
                 val cMessage = uByteMessage.refTo(0)
                 val messageLen = uByteMessage.size.toUInt()
@@ -136,7 +134,6 @@ actual class Crypto {
 
                     }
 
-
                 println("Before calling indy_pack_message")
                 indy_pack_message(
                     thisCommandHandle,
@@ -147,9 +144,7 @@ actual class Crypto {
                 waitForCallback(workaround)
 
             }
-
            return workaround.getByteArray()
-
         }
 
         private fun enableIndyLog() {
@@ -160,13 +155,13 @@ actual class Crypto {
             ) -> indy_bool_t>>? = null
             val flushFn: CPointer<CFunction<(COpaquePointer?) -> Unit>>? = null
             val myExitCallback = staticCFunction(fun(
-                log: CPointer<out CPointed>?,
-                elem: indy_u32_t,
+                _: CPointer<out CPointed>?,
+                _: indy_u32_t,
                 pointer: CPointer<ByteVar>?,
                 val1: CPointer<ByteVar>?,
                 val2: CPointer<ByteVar>?,
                 val3: CPointer<ByteVar>?,
-                number: indy_u32_t,
+                _: indy_u32_t,
             ) {
                 initRuntimeIfNeeded()
                 println(pointer?.toKString())
@@ -196,7 +191,7 @@ actual class Crypto {
 
         }
 
-
+        @OptIn(ExperimentalUnsignedTypes::class)
         actual fun unpackMessage(
             wallet: Wallet,
             jwe_data: ByteArray
@@ -229,7 +224,7 @@ actual class Crypto {
             sleep(8)
             if (result.toInt() != 0)
                 throw Exception("UnPackException")
-            var stringResult = rwStringUnPack.read()
+            val stringResult = rwStringUnPack.read()
             return stringResult.toByteArray()
         }
     }
