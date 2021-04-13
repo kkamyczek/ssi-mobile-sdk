@@ -40,11 +40,7 @@ class WebSocketTransportImpl : Transport {
 
         println("Synthesized url: $url")
         val appSocket = openOrGetExistingConnection(url)
-
-        println("$message.payload")
-
-        //appSocket.send(message.payload)
-
+        appSocket.send(message.payload)
     }
 
     private fun openConnection(endpoint: String): AppSocket {
@@ -70,7 +66,7 @@ class WebSocketTransportImpl : Transport {
     //TODO: find some proper URL data model
     //ws://11.0.1.11:7000/ws
     private fun parseProtocolFromEndpoint(endpoint: String): String {
-        return Regex("(^.*):.*:.*$").find(endpoint)!!.groups[1]!!.value
+        return Regex("(^.*):\\/\\/.*:.*$").find(endpoint)!!.groups[1]!!.value
     }
 
     private fun parsePathFromEndpoint(endpoint: String): String {
@@ -83,7 +79,7 @@ class WebSocketTransportImpl : Transport {
     }
 
     private fun parseHostFromEndpoint(endpoint: String): String {
-        return Regex("^.*:(.*):.*$").find(endpoint)!!.groups[1]!!.value
+        return Regex("^.*:\\/\\/(.*):.*$").find(endpoint)!!.groups[1]!!.value
     }
 
 

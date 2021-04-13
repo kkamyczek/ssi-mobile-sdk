@@ -7,7 +7,6 @@ import com.dxc.ssi.agent.model.IdentityDetails
 import com.dxc.ssi.agent.model.messages.Message
 import com.dxc.ssi.agent.wallet.indy.helpers.WalletHelper
 import com.dxc.ssi.agent.wallet.indy.libindy.*
-import io.ktor.utils.io.charsets.*
 import io.ktor.utils.io.core.*
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
@@ -86,7 +85,7 @@ open class IndyWalletHolder : WalletHolder {
             Connection.fromJson(extractValue(retrievedValue))
         } catch (e: Exception) {
             //TODO: understand what ExecutionException in java implementation corresponds to in kotlin code
-            //TODO: check how to compare exact exception class rather than message contains string
+                //TODO: check how to compare exact exception class rather than message contains string
             if (e.message!!.contains("WalletItemNotFoundException") )
                 null
             else
@@ -98,7 +97,7 @@ open class IndyWalletHolder : WalletHolder {
 
     private fun extractValue(retrievedValue: String?): String {
 
-        val group = Regex("value\":\"(.*})\",").find(retrievedValue!!)!!.groups[1]!!.value.replace("\\", "")
+        val group = Regex("value\":\"(.*\\})\",").find(retrievedValue!!)!!.groups[1]!!.value.replace("\\", "")
         println(group)
 
         return group
@@ -111,7 +110,6 @@ open class IndyWalletHolder : WalletHolder {
         val walletPassword = "testWalletPassword"
 
         //TODO: remove this line in order to not clear wallet each time
-
         WalletHelper.createOrTrunc(walletName = walletName, walletPassword = walletPassword)
         wallet = WalletHelper.openOrCreate(walletName = walletName, walletPassword = walletPassword)
 
@@ -120,16 +118,13 @@ open class IndyWalletHolder : WalletHolder {
 
         val didConfigJson = Json.encodeToString(DidConfig())
         val didResult = Did.createAndStoreMyDid(wallet!!, didConfigJson)
-        val didElem = didResult.getDid()
-        val verkeyElem = didResult.getVerkey()
-
-        did = didElem
-        verkey = verkeyElem
+        did = didResult.getDid()
+        verkey = didResult.getVerkey()
     }
 
     //TODO: remove all unnecessary code and beautify this function
     override fun packMessage(message: Message, recipientKeys: List<String>, useAnonCrypt: Boolean): String {
-        val byteArrayMessage = message.payload.toByteArray()   //Maybe Charset UTF8
+        val byteArrayMessage = message.payload.toByteArray()
         val recipientVk = recipientKeys.joinToString(separator = "\",\"", prefix = "[\"", postfix = "\"]")
         //val recipientVk = recipientKeys.joinToString(separator = ",",prefix = "", postfix = "")
         println("recipientKeys = $recipientVk")

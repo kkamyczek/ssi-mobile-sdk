@@ -10,12 +10,11 @@ import com.dxc.ssi.agent.transport.Sleeper
 import org.junit.Ignore
 import org.junit.Test
 
-//TODO: if we can use some common kotlin tests to have common tests for all platforms
 class SsiAgentApiImplTest {
 
 
     @Test
-   // @Ignore("Ignored because it is actually integration tets whoch should be moved out of unit tests in order to to run during build")
+    @Ignore("Ignored because it is actually integration tets whoch should be moved out of unit tests in order to to run during build")
     //TODO: Move integration tests to separate module
     fun basicTest() {
 
@@ -26,7 +25,7 @@ class SsiAgentApiImplTest {
         ssiAgentApi.init()
 
         val invitationUrl =
-            "ws://localhost:7000/ws?c_i=eyJsYWJlbCI6IlZlcmlmaWVyIiwiaW1hZ2VVcmwiOm51bGwsInNlcnZpY2VFbmRwb2ludCI6IndzOi8vbG9jYWxob3N0OjcwMDAvd3MiLCJyb3V0aW5nS2V5cyI6WyIycFg0TGZ6dWNUc3pjeEh0d0FVN3FpcUZCMjZvQ2J2ZHdRYmROVXVMUG1xYSJdLCJyZWNpcGllbnRLZXlzIjpbIkg2YWo0VkRGS2UxVDdNQjlNanBpWlA1N0NWWjJtVzZMa29CRU1uNWRjNEJFIl0sIkBpZCI6ImI1NWM5MzliLTg5ZDctNDEyMS1hYWIyLWQwNDRjZGJlZGI2NSIsIkB0eXBlIjoiZGlkOnNvdjpCekNic05ZaE1yakhpcVpEVFVBU0hnO3NwZWMvY29ubmVjdGlvbnMvMS4wL2ludml0YXRpb24ifQ=="
+            "ws://192.168.0.117:7000/ws?c_i=eyJsYWJlbCI6Iklzc3VlciIsImltYWdlVXJsIjpudWxsLCJzZXJ2aWNlRW5kcG9pbnQiOiJ3czovLzE5Mi4xNjguMC4xMTc6NzAwMC93cyIsInJvdXRpbmdLZXlzIjpbIjZpekJUZ0g4aHhyQnFpU2I2NnprclZydFJCZ2FMa2JrUjdoY2YzTXVDUUU3Il0sInJlY2lwaWVudEtleXMiOlsiTVBlN2h3QUptWDJqN1lUaDVSOTZFWkc5WDZ6YTdMOUhFcmk3RHFkRkNlVCJdLCJAaWQiOiJmODg0ODFhNC01NTdhLTQ1ODctOGU1MS1hNzM2MDM5ZmNlNjEiLCJAdHlwZSI6ImRpZDpzb3Y6QnpDYnNOWWhNcmpIaXFaRFRVQVNIZztzcGVjL2Nvbm5lY3Rpb25zLzEuMC9pbnZpdGF0aW9uIn0="
 
 
         ssiAgentApi.connect(invitationUrl)

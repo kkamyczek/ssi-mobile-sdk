@@ -1,16 +1,65 @@
 package com.dxc.ssi.agent.api.impl
 
+import com.dxc.ssi.agent.transport.Sleeper
+import com.dxc.ssi.agent.wallet.indy.model.WalletConfig
+import com.dxc.ssi.agent.wallet.indy.model.WalletPassword
 import com.indylib.*
 import io.ktor.utils.io.core.*
 import kotlinx.cinterop.*
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import platform.Foundation.*
+import platform.posix.nanosleep
 import platform.posix.memcpy
 import platform.posix.sleep
+import platform.posix.timespec
+import kotlin.native.concurrent.AtomicInt
 import kotlin.native.concurrent.AtomicReference
 import kotlin.test.Test
+import kotlin.test.Ignore
 
 @SharedImmutable
 val rw = ReadWrite()
+
+class Workaround() {
+
+    val callbackCompleted = AtomicReference<Boolean>(false)
+    val atomicInt = AtomicInt(0)
+    val atomicString = AtomicReference<String>("")
+
+    fun setIntValue(intValue : Int) {
+        this.atomicInt.value = intValue
+    }
+
+    fun getIntValue() : Int{
+        return atomicInt.value
+    }
+
+    fun setStringValue(s: String) {
+        atomicString.value = s
+    }
+
+    fun getStringValue(): String {
+        return atomicString.value
+    }
+
+    fun resetCallbackStatus() {
+        callbackCompleted.value = false
+    }
+
+    fun setCallbackCompleted() {
+        callbackCompleted.value = true
+    }
+
+    fun isCallbackCompleted() : Boolean {
+        return callbackCompleted.value
+    }
+}
+
+@SharedImmutable
+val workaround = Workaround()
 
 class ReadWrite {
     fun String.nsdata(): NSData? =
@@ -49,6 +98,7 @@ typealias MyCallbackWallet2 = CPointer<CFunction<(indy_handle_t, indy_error_t, i
 class IosIndyTest {
 
     @Test
+    @Ignore
     fun test_indy_log() {
 
         memScoped {
@@ -273,6 +323,7 @@ class IosIndyTest {
 
     @ExperimentalUnsignedTypes
     @Test
+    @Ignore
     fun test_indy_array() {
 
         memScoped {
@@ -523,8 +574,116 @@ class IosIndyTest {
             println(rw.read())
         }
     }
-}
 
+
+
+
+
+    @Test
+    fun simpleTest() {
+
+
+
+        val config = WalletConfig("testWallet11111")
+        val password = WalletPassword("testWalletPassword")
+
+        val walletConfigJson = Json.encodeToString(config)
+        val walletPasswordJson = Json.encodeToString(password)
+
+        val commandHandle = 1
+
+
+
+        workaround.setIntValue( 3)
+        workaround.resetCallbackStatus()
+        val callback = staticCFunction<Int, UInt, Unit> { commandHandle: Int, errorCode: UInt
+            ->
+            initRuntimeIfNeeded()
+            val strCommandHandle = commandHandle.toString()
+            println("Executing callback from create_wallet: commandHandle = $strCommandHandle, errorCode = $errorCode")
+
+
+            workaround.setIntValue(commandHandle)
+            workaround.setStringValue(strCommandHandle)
+
+            workaround.setCallbackCompleted()
+        }
+
+
+
+        indy_create_wallet(commandHandle, walletConfigJson, walletPasswordJson, callback)
+
+        val commandHandle1 = waitForCallback(workaround)
+
+        println("Callback returned $commandHandle1")
+
+
+        return
+        sleep(8)
+
+        val intVal = workaround.getIntValue()
+        println("reading int value from workaround = ${intVal}")
+
+        println("after wallet creation: ${workaround.getStringValue()}")
+
+        /*
+        indy_open_wallet(command_handle: com.indylib.indy_handle_t /* = kotlin.Int */, @kotlinx.cinterop.internal.CCall.CString config: kotlin.String?, @kotlinx.cinterop.internal.CCall.CString credentials: kotlin.String?, fn: kotlinx.cinterop.CPointer<kotlinx.cinterop.CFunction<(com.indylib.indy_handle_t /* = kotlin.Int */, com.indylib.indy_error_t /* = kotlin.UInt */, com.indylib.indy_handle_t /* = kotlin.Int */) -> kotlin.Unit>>?): com.indylib.indy_error_t /* = kotlin.UInt */ { /* compiled code */ }
+         */
+
+        val commandHandle2 = 2
+
+
+        val openWalletCallback =
+            staticCFunction<Int, UInt, Int, Unit> { commandHandle: Int, errorCode: UInt, walletHandle: Int
+                ->
+                initRuntimeIfNeeded()
+                println("Executing callback from open_wallet: commandHandle = $commandHandle, errorCode = $errorCode, walletHandle = $walletHandle")
+
+            }
+
+        indy_open_wallet(commandHandle2, walletConfigJson, walletPasswordJson, openWalletCallback)
+
+        sleep(10)
+
+    }
+
+    private fun waitForCallback(workaround: Workaround): Int {
+        //TODO: instead of sleep in the loop find out some proper kotlin solution, like channels, coroutines.
+        //TODO: introduce timeout which is randomly increases
+        //TODO: introduce some handling of command handle inside of this fun or some helper class
+        while (!workaround.isCallbackCompleted()) {
+            println("Callback is not completed. Sleeping...")
+            Sleeper().sleep(500)
+        }
+        return workaround.getIntValue()
+
+    }
+
+
+
+    @Test
+   fun concurrencyTest() {
+        println("Started")
+       val channel = Channel<Int>()
+        println("Created channel")
+       runBlocking {
+           println("Before sending to channel in GlobalScope")
+           channel.send(1)
+           channel.close()
+       }
+        println("After GlobalScope.launch")
+       var value: Int? = 0
+       runBlocking {
+           println("Started run blocking")
+
+           value = channel.receive()
+       }
+
+       println("received value = $value")
+
+       return
+   }
+}
 
 
 
