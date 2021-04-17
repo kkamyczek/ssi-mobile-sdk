@@ -29,12 +29,13 @@ class AppSocket(url: String, incomingMessagesQueue: MutableList<MessageEnvelop>)
         ws.openSocket(socketListener)
 
         while (currentState == State.CONNECTING) {
+            println(currentState)
             Sleeper().sleep(100)
         }
-
+        println(currentState)
         if (currentState != State.CONNECTED)
             throw throw IllegalStateException("Could not be opened")
-
+        println(currentState)
     }
 
     fun disconnect() {

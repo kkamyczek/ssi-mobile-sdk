@@ -8,6 +8,7 @@ import com.indylib.indy_create_wallet
 import kotlinx.cinterop.staticCFunction
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import kotlin.test.Ignore
 import kotlin.test.Test
 
 
@@ -19,6 +20,7 @@ data class CreateWalletResult(
 class CallbackTest {
 
     @Test
+    @Ignore
     @OptIn(ExperimentalStdlibApi::class)
     fun callbackTest() {
 

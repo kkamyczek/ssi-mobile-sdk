@@ -135,6 +135,7 @@ class IosIndyTest {
     }
 
     @Test
+    @Ignore
     fun run() {
         val didJson = "{}"
         val commandHandle = 0
@@ -162,6 +163,7 @@ class IosIndyTest {
     }
 
     @Test
+    @Ignore
     fun test_indy_create_wallet() {
 
         val command = 1
@@ -253,6 +255,7 @@ class IosIndyTest {
     }
 
     @Test
+    @Ignore
     fun test_indy_create_and_store_my_did() {
 
         val commandHandle = 1
@@ -286,6 +289,7 @@ class IosIndyTest {
 
     @ExperimentalUnsignedTypes
     @Test
+    @Ignore
     fun test_indy_array() {
 
         memScoped {
