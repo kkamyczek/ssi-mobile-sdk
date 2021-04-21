@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+
 val serializationVersion: String = "1.0.1"
 val indyVersion: String = "1.16.0"
 val ktorVersion: String = "1.5.1"
@@ -56,14 +57,26 @@ kotlin {
                 extraOpts("-libraryPath", "$projectDir/indylib")
                 extraOpts("-compiler-options", "-std=c99 -I$projectDir/indylib")
             }
+            val socketlib by cinterops.creating {
+                defFile(project.file("../ssi-mobile-sdk/socketlib/socketlib.def"))
+                extraOpts("-libraryPath", "$projectDir/socketlib")
+                extraOpts("-compiler-options", "-std=c99 -I$projectDir/socketlib")
+            }
         }
     }
     cocoapods {
         summary = "Kotlin sample project with CocoaPods dependencies"
         homepage = "https://github.com/Kotlin/kotlin-with-cocoapods-sample"
-        ios.deploymentTarget = "13.5"
-    }
+        osx.deploymentTarget = "10.8"
+        tvos.deploymentTarget = "9.0"
+        ios.deploymentTarget = "6.0"
 
+        pod("PocketSocket") {
+            source = git("https://github.com/zwopple/PocketSocket") {
+                tag = "1.0.1"
+            }
+        }
+    }
 
     val hostOs = System.getProperty("os.name")
     val isMingwX64 = hostOs.startsWith("Windows")
@@ -79,8 +92,8 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
                 implementation("io.ktor:ktor-utils:$ktorVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinxCourutinesVersion")
-                implementation ("co.touchlab:stately-iso-collections:1.1.4-a1")
-                implementation ("com.benasher44:uuid:$uuidVersion")
+                implementation("co.touchlab:stately-iso-collections:1.1.4-a1")
+                implementation("com.benasher44:uuid:$uuidVersion")
                 //TODO: check why jdk dependency is added in common module
                 implementation(kotlin("stdlib-jdk8"))
             }
@@ -133,11 +146,13 @@ kotlin {
         val iosMain by getting {
             dependencies {
                 implementation(files("indylib.klib"))
+                implementation(files("socketlib.klib"))
             }
         }
         val iosTest by getting {
             dependencies {
                 implementation(files("indylib.klib"))
+                implementation(files("socketlib.klib"))
             }
         }
     }
@@ -197,3 +212,19 @@ val packForXcode by tasks.creating(Sync::class) {
     into(targetDir)
 }
 tasks.getByName("build").dependsOn(packForXcode)
+val iosTestIPhone: Task by tasks.creating {
+    val device = "iPhone 8"
+    val testExecutable = kotlin.targets.getByName<KotlinNativeTarget>("iosX64").binaries.getTest("DEBUG")
+    dependsOn(testExecutable.linkTaskName)
+    group = JavaBasePlugin.VERIFICATION_GROUP
+    description = "Runs tests for target 'ios' on an iOS simulator"
+
+    doLast {
+        exec {
+            println(testExecutable.outputFile.absolutePath)
+            commandLine("xcrun", "simctl", "spawn", "--standalone", device, testExecutable.outputFile.absolutePath)
+        }
+    }
+}
+
+tasks.getByName("allTests").dependsOn(iosTestIPhone)
