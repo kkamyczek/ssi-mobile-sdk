@@ -16,7 +16,7 @@
 		A4C2E7CF260B74630044B4CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2E7CE260B74630044B4CC /* main.m */; };
 		A4C2E7D9260B74640044B4CC /* agentAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2E7D8260B74640044B4CC /* agentAppTests.m */; };
 		A4C2E7E4260B74640044B4CC /* agentAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2E7E3260B74640044B4CC /* agentAppUITests.m */; };
-		A4C2E7FA260B75AA0044B4CC /* kotlin_multiplatform_agent in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2E7F5260B74820044B4CC /* kotlin_multiplatform_agent */; };
+		A4FED39126375D640022FB59 /* kotlin_multiplatform_agent in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FED38926375CCB0022FB59 /* kotlin_multiplatform_agent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,9 @@
 		A4C2E7DF260B74640044B4CC /* agentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C2E7E3260B74640044B4CC /* agentAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = agentAppUITests.m; sourceTree = "<group>"; };
 		A4C2E7E5260B74640044B4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4C2E7F5260B74820044B4CC /* kotlin_multiplatform_agent */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = kotlin_multiplatform_agent; path = ../build/KotlinShared/kotlin_multiplatform_agent.framework/kotlin_multiplatform_agent; sourceTree = "<group>"; };
-		A4C2E7F6260B74970044B4CC /* kotlin_multiplatform_agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kotlin_multiplatform_agent.h; path = ../../build/KotlinShared/kotlin_multiplatform_agent.framework/Headers/kotlin_multiplatform_agent.h; sourceTree = "<group>"; };
+		A4FED37D26375C7D0022FB59 /* kotlin_multiplatform_agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kotlin_multiplatform_agent.h; sourceTree = "<group>"; };
+		A4FED38926375CCB0022FB59 /* kotlin_multiplatform_agent */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = kotlin_multiplatform_agent; sourceTree = "<group>"; };
+		A4FED3A126375F7A0022FB59 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C2E7FA260B75AA0044B4CC /* kotlin_multiplatform_agent in Frameworks */,
+				A4FED39126375D640022FB59 /* kotlin_multiplatform_agent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +89,7 @@
 		A4C2E7B0260B74630044B4CC = {
 			isa = PBXGroup;
 			children = (
+				A4FED37D26375C7D0022FB59 /* kotlin_multiplatform_agent.h */,
 				A4C2E7BB260B74630044B4CC /* agentApp */,
 				A4C2E7D7260B74640044B4CC /* agentAppTests */,
 				A4C2E7E2260B74640044B4CC /* agentAppUITests */,
@@ -109,7 +111,6 @@
 		A4C2E7BB260B74630044B4CC /* agentApp */ = {
 			isa = PBXGroup;
 			children = (
-				A4C2E7F6260B74970044B4CC /* kotlin_multiplatform_agent.h */,
 				A4C2E7BC260B74630044B4CC /* AppDelegate.h */,
 				A4C2E7BD260B74630044B4CC /* AppDelegate.m */,
 				A4C2E7BF260B74630044B4CC /* SceneDelegate.h */,
@@ -121,6 +122,7 @@
 				A4C2E7CA260B74630044B4CC /* LaunchScreen.storyboard */,
 				A4C2E7CD260B74630044B4CC /* Info.plist */,
 				A4C2E7CE260B74630044B4CC /* main.m */,
+				A4FED3A126375F7A0022FB59 /* Header.h */,
 			);
 			path = agentApp;
 			sourceTree = "<group>";
@@ -146,7 +148,7 @@
 		A4C2E7F4260B74820044B4CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4C2E7F5260B74820044B4CC /* kotlin_multiplatform_agent */,
+				A4FED38926375CCB0022FB59 /* kotlin_multiplatform_agent */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,10 +458,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = agentApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/agentApp",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lux.agentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,10 +480,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = agentApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/agentApp",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lux.agentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class Kotlin_multiplatform_agentReceivedUnpackedMessage, Kotlin_multiplatform_agentWalletConnector, Kotlin_multiplatform_agentCallbacks, Kotlin_multiplatform_agentMessageRouterImplRoute, Kotlin_multiplatform_agentMessage, Kotlin_multiplatform_agentTrustPingProcessorImpl, Kotlin_multiplatform_agentKotlinEnum<E>, Kotlin_multiplatform_agentKotlinArray<T>, Kotlin_multiplatform_agentTrustPingRequest, Kotlin_multiplatform_agentThread, Kotlin_multiplatform_agentTrustPingResponse, Kotlin_multiplatform_agentAuthentication, Kotlin_multiplatform_agentDidDocument, Kotlin_multiplatform_agentConnection, Kotlin_multiplatform_agentConnectionRequest, Kotlin_multiplatform_agentConnectionSignature, Kotlin_multiplatform_agentConnectionResponse, Kotlin_multiplatform_agentPublicKey, Kotlin_multiplatform_agentService, Kotlin_multiplatform_agentInvitation, Kotlin_multiplatform_agentEncryptedEnvelop, Kotlin_multiplatform_agentForward, Kotlin_multiplatform_agentKotlinPair<__covariant A, __covariant B>, Kotlin_multiplatform_agentCredentialIssuenceState, Kotlin_multiplatform_agentCredentialVerificationState, Kotlin_multiplatform_agentActionResult, Kotlin_multiplatform_agentConnection_, Kotlin_multiplatform_agentTrustPingProcessorImplDidExchangeMessageType, Kotlin_multiplatform_agentAbstractMessageProcessor, Kotlin_multiplatform_agentDidExchangeProcessorImplDidExchangeMessageType, Kotlin_multiplatform_agentDidConfig, Kotlin_multiplatform_agentIdentityDetails, Kotlin_multiplatform_agentBasicMessageWithTypeOnly, Kotlin_multiplatform_agentMessageEnvelop, Kotlin_multiplatform_agentTransportableMessage, Kotlin_multiplatform_agentAppSocketState, Kotlin_multiplatform_agentKotlinThrowable, Kotlin_multiplatform_agentCallbackResult, Kotlin_multiplatform_agentKotlinAtomicInt, Kotlin_multiplatform_agentTestCallbackDataImpl, Kotlin_multiplatform_agentErrorCode, Kotlin_multiplatform_agentErrorDetails, Kotlin_multiplatform_agentKotlinException, Kotlin_multiplatform_agentIndyException, Kotlin_multiplatform_agentIndyWalletHolder, Kotlin_multiplatform_agentStorageConfig, Kotlin_multiplatform_agentWalletConfig, Kotlin_multiplatform_agentWalletPassword, Kotlin_multiplatform_agentWallet, Kotlin_multiplatform_agentWalletHelperCreateWalletResult, Kotlin_multiplatform_agentWalletHelperOpenWalletResult, Kotlin_multiplatform_agentKotlinByteArray, Kotlin_multiplatform_agentCryptoPackedMessageCallbackResult, Kotlin_multiplatform_agentCryptoUnPackedMessageCallbackResult, Kotlin_multiplatform_agentCreateAndStoreMyDidResult, Kotlin_multiplatform_agentDidCreateAndStoreMyDidCallbackResult, Kotlin_multiplatform_agentWalletRecordAddWalletRecordCallbackResult, Kotlin_multiplatform_agentWalletRecordGetWalletRecordCallbackResult, Kotlin_multiplatform_agentWalletRecordUpdateWalletRecordCallbackResult, Kotlin_multiplatform_agentCallbackHandler, Kotlin_multiplatform_agentKotlinByteIterator, Kotlin_multiplatform_agentKotlinx_serialization_coreSerializersModule, Kotlin_multiplatform_agentKotlinx_serialization_coreSerialKind, Kotlin_multiplatform_agentKotlinNothing;
+@class Kotlin_multiplatform_agentReceivedUnpackedMessage, Kotlin_multiplatform_agentKotlinUnit, Kotlin_multiplatform_agentWalletConnector, Kotlin_multiplatform_agentCallbacks, Kotlin_multiplatform_agentMessageRouterImplRoute, Kotlin_multiplatform_agentMessage, Kotlin_multiplatform_agentTrustPingProcessorImpl, Kotlin_multiplatform_agentKotlinEnum<E>, Kotlin_multiplatform_agentKotlinArray<T>, Kotlin_multiplatform_agentTrustPingRequest, Kotlin_multiplatform_agentThread, Kotlin_multiplatform_agentTrustPingResponse, Kotlin_multiplatform_agentAuthentication, Kotlin_multiplatform_agentDidDocument, Kotlin_multiplatform_agentConnection, Kotlin_multiplatform_agentConnectionRequest, Kotlin_multiplatform_agentConnectionSignature, Kotlin_multiplatform_agentConnectionResponse, Kotlin_multiplatform_agentPublicKey, Kotlin_multiplatform_agentService, Kotlin_multiplatform_agentInvitation, Kotlin_multiplatform_agentEncryptedEnvelop, Kotlin_multiplatform_agentForward, Kotlin_multiplatform_agentKotlinPair<__covariant A, __covariant B>, Kotlin_multiplatform_agentCredentialIssuenceState, Kotlin_multiplatform_agentCredentialVerificationState, Kotlin_multiplatform_agentActionResult, Kotlin_multiplatform_agentConnection_, Kotlin_multiplatform_agentTrustPingProcessorImplDidExchangeMessageType, Kotlin_multiplatform_agentAbstractMessageProcessor, Kotlin_multiplatform_agentDidExchangeProcessorImplDidExchangeMessageType, Kotlin_multiplatform_agentDidConfig, Kotlin_multiplatform_agentIdentityDetails, Kotlin_multiplatform_agentBasicMessageWithTypeOnly, Kotlin_multiplatform_agentMessageEnvelop, Kotlin_multiplatform_agentTransportableMessage, Kotlin_multiplatform_agentAppSocketState, Kotlin_multiplatform_agentKotlinThrowable, Kotlin_multiplatform_agentSocketClosureDetails, NSURLSessionWebSocketTask, Kotlin_multiplatform_agentWebSocketWrapper, Kotlin_multiplatform_agentCallbackResult, Kotlin_multiplatform_agentIndyException, Kotlin_multiplatform_agentCallbackDataWrapper, Kotlin_multiplatform_agentKotlinAtomicInt, Kotlin_multiplatform_agentErrorCode, Kotlin_multiplatform_agentErrorDetails, Kotlin_multiplatform_agentKotlinException, Kotlin_multiplatform_agentIndyWalletHolder, Kotlin_multiplatform_agentObjectHolder<T>, Kotlin_multiplatform_agentStorageConfig, Kotlin_multiplatform_agentWalletConfig, Kotlin_multiplatform_agentWalletPassword, Kotlin_multiplatform_agentWallet, Kotlin_multiplatform_agentKotlinByteArray, Kotlin_multiplatform_agentCryptoPackedMessageCallbackResult, Kotlin_multiplatform_agentCryptoUnPackedMessageCallbackResult, Kotlin_multiplatform_agentCreateAndStoreMyDidResult, Kotlin_multiplatform_agentDidCreateAndStoreMyDidCallbackResult, Kotlin_multiplatform_agentWalletCreateWalletResult, Kotlin_multiplatform_agentWalletOpenWalletResult, Kotlin_multiplatform_agentWalletRecordAddWalletRecordCallbackResult, Kotlin_multiplatform_agentWalletRecordGetWalletRecordCallbackResult, Kotlin_multiplatform_agentWalletRecordUpdateWalletRecordCallbackResult, Kotlin_multiplatform_agentCallbackHandler, Kotlin_multiplatform_agentKotlinRuntimeException, Kotlin_multiplatform_agentKotlinIllegalStateException, Kotlin_multiplatform_agentKotlinx_coroutines_coreCancellationException, Kotlin_multiplatform_agentKotlinByteIterator, Kotlin_multiplatform_agentKotlinx_serialization_coreSerializersModule, Kotlin_multiplatform_agentKotlinx_serialization_coreSerialKind, Kotlin_multiplatform_agentKotlinNothing, Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicDesc, Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<__contravariant T>, Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor, Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode, Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
 
-@protocol Kotlin_multiplatform_agentDidExchangeProcessor, Kotlin_multiplatform_agentTrustPingProcessor, Kotlin_multiplatform_agentMessageRouter, Kotlin_multiplatform_agentTransport, Kotlin_multiplatform_agentKotlinComparable, Kotlin_multiplatform_agentMessageListener, Kotlin_multiplatform_agentKotlinx_serialization_coreKSerializer, Kotlin_multiplatform_agentState, Kotlin_multiplatform_agentAction, Kotlin_multiplatform_agentStateMachine, Kotlin_multiplatform_agentDidExchangeState, Kotlin_multiplatform_agentDidExchangeAction, Kotlin_multiplatform_agentConnectionInitiatorController, Kotlin_multiplatform_agentMessageProcessor, Kotlin_multiplatform_agentCredVerifierProcessor, Kotlin_multiplatform_agentCredIssuerProcessor, Kotlin_multiplatform_agentConnectionResponderController, Kotlin_multiplatform_agentCredReceiverController, Kotlin_multiplatform_agentCredIssuerController, Kotlin_multiplatform_agentCredPresenterController, Kotlin_multiplatform_agentCredVerifierController, Kotlin_multiplatform_agentLedgerConnector, Kotlin_multiplatform_agentSsiAgentApi, Kotlin_multiplatform_agentSsiAgentBuilder, Kotlin_multiplatform_agentIssuer, Kotlin_multiplatform_agentProver, Kotlin_multiplatform_agentTrustee, Kotlin_multiplatform_agentVerifier, Kotlin_multiplatform_agentWalletHolder, Kotlin_multiplatform_agentCallbackData, Kotlin_multiplatform_agentKotlinIterator, Kotlin_multiplatform_agentKotlinx_serialization_coreEncoder, Kotlin_multiplatform_agentKotlinx_serialization_coreSerialDescriptor, Kotlin_multiplatform_agentKotlinx_serialization_coreSerializationStrategy, Kotlin_multiplatform_agentKotlinx_serialization_coreDecoder, Kotlin_multiplatform_agentKotlinx_serialization_coreDeserializationStrategy, Kotlin_multiplatform_agentKotlinx_serialization_coreCompositeEncoder, Kotlin_multiplatform_agentKotlinAnnotation, Kotlin_multiplatform_agentKotlinx_serialization_coreCompositeDecoder, Kotlin_multiplatform_agentKotlinx_serialization_coreSerializersModuleCollector, Kotlin_multiplatform_agentKotlinKClass, Kotlin_multiplatform_agentKotlinKDeclarationContainer, Kotlin_multiplatform_agentKotlinKAnnotatedElement, Kotlin_multiplatform_agentKotlinKClassifier;
+@protocol Kotlin_multiplatform_agentDidExchangeProcessor, Kotlin_multiplatform_agentTrustPingProcessor, Kotlin_multiplatform_agentMessageRouter, Kotlin_multiplatform_agentTransport, Kotlin_multiplatform_agentKotlinComparable, Kotlin_multiplatform_agentMessageListener, Kotlin_multiplatform_agentKotlinx_serialization_coreKSerializer, Kotlin_multiplatform_agentState, Kotlin_multiplatform_agentAction, Kotlin_multiplatform_agentStateMachine, Kotlin_multiplatform_agentDidExchangeState, Kotlin_multiplatform_agentDidExchangeAction, Kotlin_multiplatform_agentConnectionInitiatorController, Kotlin_multiplatform_agentMessageProcessor, Kotlin_multiplatform_agentCredVerifierProcessor, Kotlin_multiplatform_agentCredIssuerProcessor, Kotlin_multiplatform_agentConnectionResponderController, Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel, Kotlin_multiplatform_agentCredReceiverController, Kotlin_multiplatform_agentCredIssuerController, Kotlin_multiplatform_agentCredPresenterController, Kotlin_multiplatform_agentCredVerifierController, Kotlin_multiplatform_agentLedgerConnector, Kotlin_multiplatform_agentSsiAgentApi, Kotlin_multiplatform_agentSsiAgentBuilder, Kotlin_multiplatform_agentIssuer, Kotlin_multiplatform_agentProver, Kotlin_multiplatform_agentTrustee, Kotlin_multiplatform_agentVerifier, Kotlin_multiplatform_agentWalletHolder, Kotlin_multiplatform_agentCallbackData, Kotlin_multiplatform_agentKotlinCoroutineContext, Kotlin_multiplatform_agentKotlinx_coroutines_coreDeferred, Kotlin_multiplatform_agentKotlinIterator, Kotlin_multiplatform_agentKotlinx_serialization_coreEncoder, Kotlin_multiplatform_agentKotlinx_serialization_coreSerialDescriptor, Kotlin_multiplatform_agentKotlinx_serialization_coreSerializationStrategy, Kotlin_multiplatform_agentKotlinx_serialization_coreDecoder, Kotlin_multiplatform_agentKotlinx_serialization_coreDeserializationStrategy, Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause2, Kotlin_multiplatform_agentKotlinx_coroutines_coreSendChannel, Kotlin_multiplatform_agentKotlinx_coroutines_coreChannelIterator, Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause1, Kotlin_multiplatform_agentKotlinx_coroutines_coreReceiveChannel, Kotlin_multiplatform_agentKotlinCoroutineContextElement, Kotlin_multiplatform_agentKotlinCoroutineContextKey, Kotlin_multiplatform_agentKotlinx_coroutines_coreChildHandle, Kotlin_multiplatform_agentKotlinx_coroutines_coreChildJob, Kotlin_multiplatform_agentKotlinx_coroutines_coreDisposableHandle, Kotlin_multiplatform_agentKotlinx_coroutines_coreJob, Kotlin_multiplatform_agentKotlinSequence, Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause0, Kotlin_multiplatform_agentKotlinx_serialization_coreCompositeEncoder, Kotlin_multiplatform_agentKotlinAnnotation, Kotlin_multiplatform_agentKotlinx_serialization_coreCompositeDecoder, Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectInstance, Kotlin_multiplatform_agentKotlinSuspendFunction1, Kotlin_multiplatform_agentKotlinx_coroutines_coreParentJob, Kotlin_multiplatform_agentKotlinSuspendFunction0, Kotlin_multiplatform_agentKotlinx_serialization_coreSerializersModuleCollector, Kotlin_multiplatform_agentKotlinKClass, Kotlin_multiplatform_agentKotlinContinuation, Kotlin_multiplatform_agentKotlinFunction, Kotlin_multiplatform_agentKotlinKDeclarationContainer, Kotlin_multiplatform_agentKotlinKAnnotatedElement, Kotlin_multiplatform_agentKotlinKClassifier;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -141,7 +141,12 @@ __attribute__((swift_name("KotlinBoolean")))
 __attribute__((swift_name("MessageRouter")))
 @protocol Kotlin_multiplatform_agentMessageRouter
 @required
-- (void)routeAndProcessMessageReceivedUnpackedMessage:(Kotlin_multiplatform_agentReceivedUnpackedMessage *)receivedUnpackedMessage __attribute__((swift_name("routeAndProcessMessage(receivedUnpackedMessage:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)routeAndProcessMessageReceivedUnpackedMessage:(Kotlin_multiplatform_agentReceivedUnpackedMessage *)receivedUnpackedMessage completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("routeAndProcessMessage(receivedUnpackedMessage:completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentDidExchangeProcessor> didExchangeProcessor __attribute__((swift_name("didExchangeProcessor")));
 @property (readonly) id<Kotlin_multiplatform_agentTrustPingProcessor> trustPingProcessor __attribute__((swift_name("trustPingProcessor")));
 @end;
@@ -151,7 +156,12 @@ __attribute__((swift_name("MessageRouterImpl")))
 @interface Kotlin_multiplatform_agentMessageRouterImpl : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentMessageRouter>
 - (instancetype)initWithWalletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector transport:(id<Kotlin_multiplatform_agentTransport>)transport callbacks:(Kotlin_multiplatform_agentCallbacks *)callbacks __attribute__((swift_name("init(walletConnector:transport:callbacks:)"))) __attribute__((objc_designated_initializer));
 - (Kotlin_multiplatform_agentMessageRouterImplRoute *)determineRouteMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("determineRoute(message:)")));
-- (void)routeAndProcessMessageReceivedUnpackedMessage:(Kotlin_multiplatform_agentReceivedUnpackedMessage *)receivedUnpackedMessage __attribute__((swift_name("routeAndProcessMessage(receivedUnpackedMessage:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)routeAndProcessMessageReceivedUnpackedMessage:(Kotlin_multiplatform_agentReceivedUnpackedMessage *)receivedUnpackedMessage completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("routeAndProcessMessage(receivedUnpackedMessage:completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentDidExchangeProcessor> didExchangeProcessor __attribute__((swift_name("didExchangeProcessor")));
 @property (readonly) Kotlin_multiplatform_agentTrustPingProcessorImpl *trustPingProcessor __attribute__((swift_name("trustPingProcessor")));
 @end;
@@ -188,7 +198,12 @@ __attribute__((swift_name("MessageRouterImpl.Route")))
 __attribute__((swift_name("MessageListener")))
 @protocol Kotlin_multiplatform_agentMessageListener
 @required
-- (void)listen __attribute__((swift_name("listen()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)listenWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("listen(completionHandler:)")));
 - (void)shutdown __attribute__((swift_name("shutdown()")));
 @property (readonly) id<Kotlin_multiplatform_agentMessageRouter> messageRouter __attribute__((swift_name("messageRouter")));
 @end;
@@ -197,7 +212,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MessageListenerImpl")))
 @interface Kotlin_multiplatform_agentMessageListenerImpl : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentMessageListener>
 - (instancetype)initWithTransport:(id<Kotlin_multiplatform_agentTransport>)transport walletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector callbacks:(Kotlin_multiplatform_agentCallbacks *)callbacks __attribute__((swift_name("init(transport:walletConnector:callbacks:)"))) __attribute__((objc_designated_initializer));
-- (void)listen __attribute__((swift_name("listen()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)listenWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("listen(completionHandler:)")));
 - (void)shutdown __attribute__((swift_name("shutdown()")));
 @property (readonly) id<Kotlin_multiplatform_agentMessageRouter> messageRouter __attribute__((swift_name("messageRouter")));
 @end;
@@ -712,7 +732,12 @@ __attribute__((swift_name("DidExchangeStateStarted")))
 __attribute__((swift_name("Action")))
 @protocol Kotlin_multiplatform_agentAction
 @required
-- (Kotlin_multiplatform_agentActionResult *)perform __attribute__((swift_name("perform()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)performWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentActionResult * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("perform(completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -740,7 +765,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SendTrustPingAction")))
 @interface Kotlin_multiplatform_agentSendTrustPingAction : Kotlin_multiplatform_agentBase
 - (instancetype)initWithWalletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector transport:(id<Kotlin_multiplatform_agentTransport>)transport connection:(Kotlin_multiplatform_agentConnection_ *)connection __attribute__((swift_name("init(walletConnector:transport:connection:)"))) __attribute__((objc_designated_initializer));
-- (Kotlin_multiplatform_agentActionResult *)perform __attribute__((swift_name("perform()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)performWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentActionResult * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("perform(completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentTransport> transport __attribute__((swift_name("transport")));
 @property (readonly) Kotlin_multiplatform_agentWalletConnector *walletConnector __attribute__((swift_name("walletConnector")));
 @end;
@@ -759,7 +789,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ReceiveConnectionResponseAction")))
 @interface Kotlin_multiplatform_agentReceiveConnectionResponseAction : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentDidExchangeAction>
 - (instancetype)initWithWalletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector transport:(id<Kotlin_multiplatform_agentTransport>)transport connectionInitiatorController:(id<Kotlin_multiplatform_agentConnectionInitiatorController>)connectionInitiatorController connectionResponse:(Kotlin_multiplatform_agentConnectionResponse *)connectionResponse connection:(Kotlin_multiplatform_agentConnection_ *)connection __attribute__((swift_name("init(walletConnector:transport:connectionInitiatorController:connectionResponse:connection:)"))) __attribute__((objc_designated_initializer));
-- (Kotlin_multiplatform_agentActionResult *)perform __attribute__((swift_name("perform()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)performWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentActionResult * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("perform(completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentTransport> transport __attribute__((swift_name("transport")));
 @property (readonly) Kotlin_multiplatform_agentWalletConnector *walletConnector __attribute__((swift_name("walletConnector")));
 @end;
@@ -768,7 +803,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ReceiveInvitationAction")))
 @interface Kotlin_multiplatform_agentReceiveInvitationAction : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentDidExchangeAction>
 - (instancetype)initWithWalletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector transport:(id<Kotlin_multiplatform_agentTransport>)transport connectionInitiatorController:(id<Kotlin_multiplatform_agentConnectionInitiatorController>)connectionInitiatorController invitationUrl:(NSString *)invitationUrl __attribute__((swift_name("init(walletConnector:transport:connectionInitiatorController:invitationUrl:)"))) __attribute__((objc_designated_initializer));
-- (Kotlin_multiplatform_agentActionResult *)perform __attribute__((swift_name("perform()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)performWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentActionResult * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("perform(completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentConnectionInitiatorController> connectionInitiatorController __attribute__((swift_name("connectionInitiatorController")));
 @property (readonly) id<Kotlin_multiplatform_agentTransport> transport __attribute__((swift_name("transport")));
 @property (readonly) Kotlin_multiplatform_agentWalletConnector *walletConnector __attribute__((swift_name("walletConnector")));
@@ -782,7 +822,12 @@ __attribute__((swift_name("CredentialIssuenceAction")))
 __attribute__((swift_name("MessageProcessor")))
 @protocol Kotlin_multiplatform_agentMessageProcessor
 @required
-- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("processMessage(message:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("processMessage(message:completionHandler:)")));
 @end;
 
 __attribute__((swift_name("AbstractMessageProcessor")))
@@ -790,7 +835,12 @@ __attribute__((swift_name("AbstractMessageProcessor")))
 - (instancetype)initWithWalletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector transport:(id<Kotlin_multiplatform_agentTransport>)transport __attribute__((swift_name("init(walletConnector:transport:)"))) __attribute__((objc_designated_initializer));
 - (id<Kotlin_multiplatform_agentState>)getCurrentState __attribute__((swift_name("getCurrentState()")));
 - (id<Kotlin_multiplatform_agentStateMachine>)getStateMachine __attribute__((swift_name("getStateMachine()")));
-- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("processMessage(message:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("processMessage(message:completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentTransport> transport __attribute__((swift_name("transport")));
 @property (readonly) Kotlin_multiplatform_agentWalletConnector *walletConnector __attribute__((swift_name("walletConnector")));
 @end;
@@ -799,7 +849,12 @@ __attribute__((swift_name("TrustPingProcessor")))
 @protocol Kotlin_multiplatform_agentTrustPingProcessor
 @required
 - (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("processMessage(message:)")));
-- (BOOL)sendTrustPingOverConnectionConnection:(Kotlin_multiplatform_agentConnection_ *)connection __attribute__((swift_name("sendTrustPingOverConnection(connection:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)sendTrustPingOverConnectionConnection:(Kotlin_multiplatform_agentConnection_ *)connection completionHandler:(void (^)(Kotlin_multiplatform_agentBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("sendTrustPingOverConnection(connection:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -809,7 +864,12 @@ __attribute__((swift_name("TrustPingProcessorImpl")))
 - (id<Kotlin_multiplatform_agentState>)getCurrentState __attribute__((swift_name("getCurrentState()")));
 - (id<Kotlin_multiplatform_agentStateMachine>)getStateMachine __attribute__((swift_name("getStateMachine()")));
 - (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("processMessage(message:)")));
-- (BOOL)sendTrustPingOverConnectionConnection:(Kotlin_multiplatform_agentConnection_ *)connection __attribute__((swift_name("sendTrustPingOverConnection(connection:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)sendTrustPingOverConnectionConnection:(Kotlin_multiplatform_agentConnection_ *)connection completionHandler:(void (^)(Kotlin_multiplatform_agentBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("sendTrustPingOverConnection(connection:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -853,8 +913,18 @@ __attribute__((swift_name("CredIssuerProcessorImpl")))
 __attribute__((swift_name("DidExchangeProcessor")))
 @protocol Kotlin_multiplatform_agentDidExchangeProcessor
 @required
-- (Kotlin_multiplatform_agentConnection_ *)initiateConnectionByInvitationInvitation:(NSString *)invitation __attribute__((swift_name("initiateConnectionByInvitation(invitation:)")));
-- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("processMessage(message:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)initiateConnectionByInvitationInvitation:(NSString *)invitation completionHandler:(void (^)(Kotlin_multiplatform_agentConnection_ * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("initiateConnectionByInvitation(invitation:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("processMessage(message:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -863,8 +933,18 @@ __attribute__((swift_name("DidExchangeProcessorImpl")))
 - (instancetype)initWithWalletConnector:(Kotlin_multiplatform_agentWalletConnector *)walletConnector transport:(id<Kotlin_multiplatform_agentTransport>)transport trustPingProcessor:(id<Kotlin_multiplatform_agentTrustPingProcessor>)trustPingProcessor connectionInitiatorController:(id<Kotlin_multiplatform_agentConnectionInitiatorController> _Nullable)connectionInitiatorController connectionResponderController:(id<Kotlin_multiplatform_agentConnectionResponderController> _Nullable)connectionResponderController __attribute__((swift_name("init(walletConnector:transport:trustPingProcessor:connectionInitiatorController:connectionResponderController:)"))) __attribute__((objc_designated_initializer));
 - (id<Kotlin_multiplatform_agentState>)getCurrentState __attribute__((swift_name("getCurrentState()")));
 - (id<Kotlin_multiplatform_agentStateMachine>)getStateMachine __attribute__((swift_name("getStateMachine()")));
-- (Kotlin_multiplatform_agentConnection_ *)initiateConnectionByInvitationInvitation:(NSString *)invitation __attribute__((swift_name("initiateConnectionByInvitation(invitation:)")));
-- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message __attribute__((swift_name("processMessage(message:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)initiateConnectionByInvitationInvitation:(NSString *)invitation completionHandler:(void (^)(Kotlin_multiplatform_agentConnection_ * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("initiateConnectionByInvitation(invitation:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)processMessageMessage:(Kotlin_multiplatform_agentMessage *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("processMessage(message:completionHandler:)")));
 @property (readonly) id<Kotlin_multiplatform_agentConnectionInitiatorController> _Nullable connectionInitiatorController __attribute__((swift_name("connectionInitiatorController")));
 @property (readonly) id<Kotlin_multiplatform_agentConnectionResponderController> _Nullable connectionResponderController __attribute__((swift_name("connectionResponderController")));
 @end;
@@ -1056,7 +1136,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AppSocket")))
 @interface Kotlin_multiplatform_agentAppSocket : Kotlin_multiplatform_agentBase
 - (instancetype)initWithUrl:(NSString *)url incomingMessagesQueue:(NSMutableArray<Kotlin_multiplatform_agentMessageEnvelop *> *)incomingMessagesQueue __attribute__((swift_name("init(url:incomingMessagesQueue:)"))) __attribute__((objc_designated_initializer));
-- (void)connect __attribute__((swift_name("connect()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)connectWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("connect(completionHandler:)")));
 - (void)disconnect __attribute__((swift_name("disconnect()")));
 - (void)sendMsg:(NSString *)msg __attribute__((swift_name("send(msg:)")));
 @property (readonly) Kotlin_multiplatform_agentAppSocketState *currentState __attribute__((swift_name("currentState")));
@@ -1095,11 +1180,49 @@ __attribute__((swift_name("Sleeper")))
 - (void)sleepValue:(int32_t)value __attribute__((swift_name("sleep(value:)")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SocketClosureDetails")))
+@interface Kotlin_multiplatform_agentSocketClosureDetails : Kotlin_multiplatform_agentBase
+- (instancetype)initWithCode:(int32_t)code reason:(NSString *)reason __attribute__((swift_name("init(code:reason:)"))) __attribute__((objc_designated_initializer));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (Kotlin_multiplatform_agentSocketClosureDetails *)doCopyCode:(int32_t)code reason:(NSString *)reason __attribute__((swift_name("doCopy(code:reason:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t code __attribute__((swift_name("code")));
+@property (readonly) NSString *reason __attribute__((swift_name("reason")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SocketListenerAdapter")))
+@interface Kotlin_multiplatform_agentSocketListenerAdapter : Kotlin_multiplatform_agentBase
+- (instancetype)initWithSocketOpenedChannel:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel>)socketOpenedChannel socketReceivedMessageChannel:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel>)socketReceivedMessageChannel socketFailureChannel:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel>)socketFailureChannel socketClosedChannel:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel>)socketClosedChannel __attribute__((swift_name("init(socketOpenedChannel:socketReceivedMessageChannel:socketFailureChannel:socketClosedChannel:)"))) __attribute__((objc_designated_initializer));
+- (void)onClosedSocketClosureDetails:(Kotlin_multiplatform_agentSocketClosureDetails *)socketClosureDetails __attribute__((swift_name("onClosed(socketClosureDetails:)")));
+- (void)onFailureThrowable:(Kotlin_multiplatform_agentKotlinThrowable *)throwable __attribute__((swift_name("onFailure(throwable:)")));
+- (void)onMessageReceivedMessage:(NSString *)message __attribute__((swift_name("onMessageReceived(message:)")));
+- (void)onOpened __attribute__((swift_name("onOpened()")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel> socketClosedChannel __attribute__((swift_name("socketClosedChannel")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel> socketFailureChannel __attribute__((swift_name("socketFailureChannel")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel> socketOpenedChannel __attribute__((swift_name("socketOpenedChannel")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel> socketReceivedMessageChannel __attribute__((swift_name("socketReceivedMessageChannel")));
+@end;
+
 __attribute__((swift_name("Transport")))
 @protocol Kotlin_multiplatform_agentTransport
 @required
-- (Kotlin_multiplatform_agentMessageEnvelop *)receiveNextMessage __attribute__((swift_name("receiveNextMessage()")));
-- (void)sendMessageConnection:(Kotlin_multiplatform_agentConnection_ *)connection message:(Kotlin_multiplatform_agentMessageEnvelop *)message __attribute__((swift_name("sendMessage(connection:message:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveNextMessageWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentMessageEnvelop * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receiveNextMessage(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)sendMessageConnection:(Kotlin_multiplatform_agentConnection_ *)connection message:(Kotlin_multiplatform_agentMessageEnvelop *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("sendMessage(connection:message:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1108,8 +1231,30 @@ __attribute__((swift_name("WebSocketTransportImpl")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)doInit __attribute__((swift_name("doInit()")));
-- (Kotlin_multiplatform_agentMessageEnvelop *)receiveNextMessage __attribute__((swift_name("receiveNextMessage()")));
-- (void)sendMessageConnection:(Kotlin_multiplatform_agentConnection_ *)connection message:(Kotlin_multiplatform_agentMessageEnvelop *)message __attribute__((swift_name("sendMessage(connection:message:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveNextMessageWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentMessageEnvelop * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receiveNextMessage(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)sendMessageConnection:(Kotlin_multiplatform_agentConnection_ *)connection message:(Kotlin_multiplatform_agentMessageEnvelop *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("sendMessage(connection:message:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("WebSocketWrapper")))
+@interface Kotlin_multiplatform_agentWebSocketWrapper : Kotlin_multiplatform_agentBase
+- (instancetype)initWithWebsocket:(NSURLSessionWebSocketTask * _Nullable)websocket __attribute__((swift_name("init(websocket:)"))) __attribute__((objc_designated_initializer));
+- (NSURLSessionWebSocketTask * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (Kotlin_multiplatform_agentWebSocketWrapper *)doCopyWebsocket:(NSURLSessionWebSocketTask * _Nullable)websocket __attribute__((swift_name("doCopy(websocket:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property NSURLSessionWebSocketTask * _Nullable websocket __attribute__((swift_name("websocket")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1265,14 +1410,39 @@ __attribute__((swift_name("WalletHolder")))
 @protocol Kotlin_multiplatform_agentWalletHolder
 @required
 - (NSString *)createSessionDidIdentityRecord:(Kotlin_multiplatform_agentIdentityDetails *)identityRecord __attribute__((swift_name("createSessionDid(identityRecord:)")));
-- (Kotlin_multiplatform_agentConnection_ * _Nullable)getConnectionRecordByIdConnectionId:(NSString *)connectionId __attribute__((swift_name("getConnectionRecordById(connectionId:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getConnectionRecordByIdConnectionId:(NSString *)connectionId completionHandler:(void (^)(Kotlin_multiplatform_agentConnection_ * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getConnectionRecordById(connectionId:completionHandler:)")));
 - (Kotlin_multiplatform_agentIdentityDetails *)getIdentityDetails __attribute__((swift_name("getIdentityDetails()")));
 - (Kotlin_multiplatform_agentIdentityDetails *)getIdentityDetailsDid:(NSString *)did __attribute__((swift_name("getIdentityDetails(did:)")));
 - (NSString *)getTailsPath __attribute__((swift_name("getTailsPath()")));
-- (void)openOrCreateWallet __attribute__((swift_name("openOrCreateWallet()")));
-- (NSString *)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:)")));
-- (void)storeConnectionRecordConnection:(Kotlin_multiplatform_agentConnection_ *)connection __attribute__((swift_name("storeConnectionRecord(connection:)")));
-- (Kotlin_multiplatform_agentMessage *)unPackMessagePackedMessage:(Kotlin_multiplatform_agentMessage *)packedMessage __attribute__((swift_name("unPackMessage(packedMessage:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openOrCreateWalletWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openOrCreateWallet(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)storeConnectionRecordConnection:(Kotlin_multiplatform_agentConnection_ *)connection completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("storeConnectionRecord(connection:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)unPackMessagePackedMessage:(Kotlin_multiplatform_agentMessage *)packedMessage completionHandler:(void (^)(Kotlin_multiplatform_agentMessage * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("unPackMessage(packedMessage:completionHandler:)")));
 @end;
 
 __attribute__((swift_name("Issuer")))
@@ -1325,13 +1495,32 @@ __attribute__((swift_name("CallbackData")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CallbackDataWrapper")))
+@interface Kotlin_multiplatform_agentCallbackDataWrapper : Kotlin_multiplatform_agentBase
+- (instancetype)initWithCallbackData:(id<Kotlin_multiplatform_agentCallbackData>)callbackData indyException:(Kotlin_multiplatform_agentIndyException * _Nullable)indyException __attribute__((swift_name("init(callbackData:indyException:)"))) __attribute__((objc_designated_initializer));
+- (id<Kotlin_multiplatform_agentCallbackData>)component1 __attribute__((swift_name("component1()")));
+- (Kotlin_multiplatform_agentIndyException * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (Kotlin_multiplatform_agentCallbackDataWrapper *)doCopyCallbackData:(id<Kotlin_multiplatform_agentCallbackData>)callbackData indyException:(Kotlin_multiplatform_agentIndyException * _Nullable)indyException __attribute__((swift_name("doCopy(callbackData:indyException:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<Kotlin_multiplatform_agentCallbackData> callbackData __attribute__((swift_name("callbackData")));
+@property (readonly) Kotlin_multiplatform_agentIndyException * _Nullable indyException __attribute__((swift_name("indyException")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CallbackHandler")))
 @interface Kotlin_multiplatform_agentCallbackHandler : Kotlin_multiplatform_agentBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (int32_t)prepareCallback __attribute__((swift_name("prepareCallback()")));
 - (void)setCallbackResultCallbackData:(id<Kotlin_multiplatform_agentCallbackData>)callbackData __attribute__((swift_name("setCallbackResult(callbackData:)")));
-- (id<Kotlin_multiplatform_agentCallbackData>)waitForCallbackResultCommandHandle:(int32_t)commandHandle __attribute__((swift_name("waitForCallbackResult(commandHandle:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)waitForCallbackResultCommandHandle:(int32_t)commandHandle completionHandler:(void (^)(id<Kotlin_multiplatform_agentCallbackData> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("waitForCallbackResult(commandHandle:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1344,17 +1533,20 @@ __attribute__((swift_name("CallbackHandler.Companion")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("TestCallbackDataImpl")))
-@interface Kotlin_multiplatform_agentTestCallbackDataImpl : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentCallbackData>
-- (instancetype)initWithCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode __attribute__((swift_name("init(commandHandle:errorCode:)"))) __attribute__((objc_designated_initializer));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (uint32_t)component2 __attribute__((swift_name("component2()")));
-- (Kotlin_multiplatform_agentTestCallbackDataImpl *)doCopyCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode __attribute__((swift_name("doCopy(commandHandle:errorCode:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t commandHandle __attribute__((swift_name("commandHandle")));
-@property (readonly) uint32_t errorCode __attribute__((swift_name("errorCode")));
+__attribute__((swift_name("CoroutineHelper")))
+@interface Kotlin_multiplatform_agentCoroutineHelper : Kotlin_multiplatform_agentBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CoroutineHelper.Companion")))
+@interface Kotlin_multiplatform_agentCoroutineHelperCompanion : Kotlin_multiplatform_agentBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<Kotlin_multiplatform_agentKotlinCoroutineContext>)singleThreadCoroutineContextThreadName:(NSString *)threadName __attribute__((swift_name("singleThreadCoroutineContext(threadName:)")));
+- (id _Nullable)waitForCompletionDeferred:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreDeferred>)deferred __attribute__((swift_name("waitForCompletion(deferred:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1455,6 +1647,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ErrorDetails")))
 @interface Kotlin_multiplatform_agentErrorDetails : Kotlin_multiplatform_agentBase
 - (instancetype)initWithMessage:(NSString * _Nullable)message backtrace:(NSString * _Nullable)backtrace __attribute__((swift_name("init(message:backtrace:)"))) __attribute__((objc_designated_initializer));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (Kotlin_multiplatform_agentErrorDetails *)doCopyMessage:(NSString * _Nullable)message backtrace:(NSString * _Nullable)backtrace __attribute__((swift_name("doCopy(message:backtrace:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable backtrace __attribute__((swift_name("backtrace")));
 @property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @end;
@@ -1466,6 +1664,7 @@ __attribute__((swift_name("ErrorDetails.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 - (Kotlin_multiplatform_agentErrorDetails *)getErrorDetailsFromIndy __attribute__((swift_name("getErrorDetailsFromIndy()")));
+- (id<Kotlin_multiplatform_agentKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end;
 
 __attribute__((swift_name("KotlinThrowable")))
@@ -1499,6 +1698,7 @@ __attribute__((swift_name("IndyException")))
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithCause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *message __attribute__((swift_name("message")));
 @property (readonly) NSString * _Nullable sdkBackTrace __attribute__((swift_name("sdkBackTrace")));
 @property (readonly) int32_t sdkErrorCode __attribute__((swift_name("sdkErrorCode")));
@@ -1518,6 +1718,14 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InvalidParameterException")))
 @interface Kotlin_multiplatform_agentInvalidParameterException : Kotlin_multiplatform_agentIndyException
 - (instancetype)initWithSdkErrorCode:(int32_t)sdkErrorCode __attribute__((swift_name("init(sdkErrorCode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString *)message sdkErrorCode:(int32_t)sdkErrorCode __attribute__((swift_name("init(message:sdkErrorCode:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("WalletExistsException")))
+@interface Kotlin_multiplatform_agentWalletExistsException : Kotlin_multiplatform_agentIndyException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (instancetype)initWithMessage:(NSString *)message sdkErrorCode:(int32_t)sdkErrorCode __attribute__((swift_name("init(message:sdkErrorCode:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @end;
 
@@ -1542,14 +1750,39 @@ __attribute__((swift_name("IndyWalletHolder")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (NSString *)createSessionDidIdentityRecord:(Kotlin_multiplatform_agentIdentityDetails *)identityRecord __attribute__((swift_name("createSessionDid(identityRecord:)")));
-- (Kotlin_multiplatform_agentConnection_ * _Nullable)getConnectionRecordByIdConnectionId:(NSString *)connectionId __attribute__((swift_name("getConnectionRecordById(connectionId:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getConnectionRecordByIdConnectionId:(NSString *)connectionId completionHandler:(void (^)(Kotlin_multiplatform_agentConnection_ * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getConnectionRecordById(connectionId:completionHandler:)")));
 - (Kotlin_multiplatform_agentIdentityDetails *)getIdentityDetails __attribute__((swift_name("getIdentityDetails()")));
 - (Kotlin_multiplatform_agentIdentityDetails *)getIdentityDetailsDid:(NSString *)did __attribute__((swift_name("getIdentityDetails(did:)")));
 - (NSString *)getTailsPath __attribute__((swift_name("getTailsPath()")));
-- (void)openOrCreateWallet __attribute__((swift_name("openOrCreateWallet()")));
-- (NSString *)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:)")));
-- (void)storeConnectionRecordConnection:(Kotlin_multiplatform_agentConnection_ *)connection __attribute__((swift_name("storeConnectionRecord(connection:)")));
-- (Kotlin_multiplatform_agentMessage *)unPackMessagePackedMessage:(Kotlin_multiplatform_agentMessage *)packedMessage __attribute__((swift_name("unPackMessage(packedMessage:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openOrCreateWalletWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openOrCreateWallet(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)storeConnectionRecordConnection:(Kotlin_multiplatform_agentConnection_ *)connection completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("storeConnectionRecord(connection:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)unPackMessagePackedMessage:(Kotlin_multiplatform_agentMessage *)packedMessage completionHandler:(void (^)(Kotlin_multiplatform_agentMessage * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("unPackMessage(packedMessage:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1557,7 +1790,12 @@ __attribute__((swift_name("IndyIssuer")))
 @interface Kotlin_multiplatform_agentIndyIssuer : Kotlin_multiplatform_agentIndyWalletHolder <Kotlin_multiplatform_agentIssuer>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (NSString *)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:completionHandler:)")));
 - (NSString *)signData:(NSString *)data __attribute__((swift_name("sign(data:)")));
 @end;
 
@@ -1567,7 +1805,12 @@ __attribute__((swift_name("IndyProver")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)createMasterSecretId:(NSString *)id __attribute__((swift_name("createMasterSecret(id:)")));
-- (NSString *)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1575,7 +1818,12 @@ __attribute__((swift_name("IndyTrustee")))
 @interface Kotlin_multiplatform_agentIndyTrustee : Kotlin_multiplatform_agentIndyWalletHolder <Kotlin_multiplatform_agentTrustee>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (NSString *)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1583,7 +1831,24 @@ __attribute__((swift_name("IndyVerifier")))
 @interface Kotlin_multiplatform_agentIndyVerifier : Kotlin_multiplatform_agentIndyWalletHolder <Kotlin_multiplatform_agentVerifier>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (NSString *)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageMessage:(Kotlin_multiplatform_agentMessage *)message recipientKeys:(NSArray<NSString *> *)recipientKeys useAnonCrypt:(BOOL)useAnonCrypt completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(message:recipientKeys:useAnonCrypt:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ObjectHolder")))
+@interface Kotlin_multiplatform_agentObjectHolder<T> : Kotlin_multiplatform_agentBase
+- (instancetype)initWithObj:(T _Nullable)obj __attribute__((swift_name("init(obj:)"))) __attribute__((objc_designated_initializer));
+- (T _Nullable)component1 __attribute__((swift_name("component1()")));
+- (Kotlin_multiplatform_agentObjectHolder<T> *)doCopyObj:(T _Nullable)obj __attribute__((swift_name("doCopy(obj:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property T _Nullable obj __attribute__((swift_name("obj")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1659,38 +1924,55 @@ __attribute__((swift_name("WalletHelper")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)walletHelper __attribute__((swift_name("init()")));
-- (void)createOrTruncWalletName:(NSString *)walletName walletPassword:(NSString *)walletPassword __attribute__((swift_name("createOrTrunc(walletName:walletPassword:)")));
-- (Kotlin_multiplatform_agentWallet *)openOrCreateWalletName:(NSString *)walletName walletPassword:(NSString *)walletPassword __attribute__((swift_name("openOrCreate(walletName:walletPassword:)")));
-@end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("WalletHelper.CreateWalletResult")))
-@interface Kotlin_multiplatform_agentWalletHelperCreateWalletResult : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentCallbackData>
-- (instancetype)initWithCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode __attribute__((swift_name("init(commandHandle:errorCode:)"))) __attribute__((objc_designated_initializer));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (uint32_t)component2 __attribute__((swift_name("component2()")));
-- (Kotlin_multiplatform_agentWalletHelperCreateWalletResult *)doCopyCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode __attribute__((swift_name("doCopy(commandHandle:errorCode:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t commandHandle __attribute__((swift_name("commandHandle")));
-@property (readonly) uint32_t errorCode __attribute__((swift_name("errorCode")));
-@end;
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)createNonExistingConfig:(Kotlin_multiplatform_agentWalletConfig *)config password:(Kotlin_multiplatform_agentWalletPassword *)password completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createNonExisting(config:password:completionHandler:)")));
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("WalletHelper.OpenWalletResult")))
-@interface Kotlin_multiplatform_agentWalletHelperOpenWalletResult : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentCallbackData>
-- (instancetype)initWithCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode walletHandle:(int32_t)walletHandle __attribute__((swift_name("init(commandHandle:errorCode:walletHandle:)"))) __attribute__((objc_designated_initializer));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (uint32_t)component2 __attribute__((swift_name("component2()")));
-- (int32_t)component3 __attribute__((swift_name("component3()")));
-- (Kotlin_multiplatform_agentWalletHelperOpenWalletResult *)doCopyCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode walletHandle:(int32_t)walletHandle __attribute__((swift_name("doCopy(commandHandle:errorCode:walletHandle:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t commandHandle __attribute__((swift_name("commandHandle")));
-@property (readonly) uint32_t errorCode __attribute__((swift_name("errorCode")));
-@property (readonly) int32_t walletHandle __attribute__((swift_name("walletHandle")));
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)createNonExistingWalletName:(NSString *)walletName walletPassword:(NSString *)walletPassword completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createNonExisting(walletName:walletPassword:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)createOrTruncConfig:(Kotlin_multiplatform_agentWalletConfig *)config password:(Kotlin_multiplatform_agentWalletPassword *)password completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createOrTrunc(config:password:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)createOrTruncWalletName:(NSString *)walletName walletPassword:(NSString *)walletPassword completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createOrTrunc(walletName:walletPassword:completionHandler:)")));
+- (BOOL)existsWalletName:(NSString *)walletName __attribute__((swift_name("exists(walletName:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openExistingConfig:(Kotlin_multiplatform_agentWalletConfig *)config password:(Kotlin_multiplatform_agentWalletPassword *)password completionHandler:(void (^)(Kotlin_multiplatform_agentWallet * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openExisting(config:password:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openExistingWalletName:(NSString *)walletName walletPassword:(NSString *)walletPassword completionHandler:(void (^)(Kotlin_multiplatform_agentWallet * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openExisting(walletName:walletPassword:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openOrCreateConfig:(Kotlin_multiplatform_agentWalletConfig *)config password:(Kotlin_multiplatform_agentWalletPassword *)password completionHandler:(void (^)(Kotlin_multiplatform_agentWallet * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openOrCreate(config:password:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openOrCreateWalletName:(NSString *)walletName walletPassword:(NSString *)walletPassword completionHandler:(void (^)(Kotlin_multiplatform_agentWallet * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openOrCreate(walletName:walletPassword:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1714,8 +1996,18 @@ __attribute__((swift_name("Crypto.Companion")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-- (Kotlin_multiplatform_agentKotlinByteArray *)packMessageWallet:(Kotlin_multiplatform_agentWallet *)wallet recipientVk:(NSString *)recipientVk senderVk:(NSString * _Nullable)senderVk message:(Kotlin_multiplatform_agentKotlinByteArray *)message __attribute__((swift_name("packMessage(wallet:recipientVk:senderVk:message:)")));
-- (Kotlin_multiplatform_agentKotlinByteArray *)unpackMessageWallet:(Kotlin_multiplatform_agentWallet *)wallet jwe_data:(Kotlin_multiplatform_agentKotlinByteArray *)jwe_data __attribute__((swift_name("unpackMessage(wallet:jwe_data:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)packMessageWallet:(Kotlin_multiplatform_agentWallet *)wallet recipientVk:(NSString *)recipientVk senderVk:(NSString * _Nullable)senderVk message:(Kotlin_multiplatform_agentKotlinByteArray *)message completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinByteArray * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("packMessage(wallet:recipientVk:senderVk:message:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)unpackMessageWallet:(Kotlin_multiplatform_agentWallet *)wallet jwe_data:(Kotlin_multiplatform_agentKotlinByteArray *)jwe_data completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinByteArray * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("unpackMessage(wallet:jwe_data:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1763,7 +2055,12 @@ __attribute__((swift_name("Did.Companion")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-- (Kotlin_multiplatform_agentCreateAndStoreMyDidResult *)createAndStoreMyDidWallet:(Kotlin_multiplatform_agentWallet *)wallet didJson:(NSString *)didJson __attribute__((swift_name("createAndStoreMyDid(wallet:didJson:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)createAndStoreMyDidWallet:(Kotlin_multiplatform_agentWallet *)wallet didJson:(NSString *)didJson completionHandler:(void (^)(Kotlin_multiplatform_agentCreateAndStoreMyDidResult * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createAndStoreMyDid(wallet:didJson:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1789,6 +2086,56 @@ __attribute__((swift_name("Wallet")))
 @interface Kotlin_multiplatform_agentWallet : Kotlin_multiplatform_agentBase
 - (instancetype)initWithWalletHandle:(int32_t)walletHandle __attribute__((swift_name("init(walletHandle:)"))) __attribute__((objc_designated_initializer));
 - (int32_t)getWalletHandle __attribute__((swift_name("getWalletHandle()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Wallet.Companion")))
+@interface Kotlin_multiplatform_agentWalletCompanion : Kotlin_multiplatform_agentBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)createWalletConfig:(NSString *)config credentials:(NSString *)credentials completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createWallet(config:credentials:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)openWalletConfig:(NSString *)config credentials:(NSString *)credentials completionHandler:(void (^)(Kotlin_multiplatform_agentWallet * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("openWallet(config:credentials:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Wallet.CreateWalletResult")))
+@interface Kotlin_multiplatform_agentWalletCreateWalletResult : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentCallbackData>
+- (instancetype)initWithCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode __attribute__((swift_name("init(commandHandle:errorCode:)"))) __attribute__((objc_designated_initializer));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (uint32_t)component2 __attribute__((swift_name("component2()")));
+- (Kotlin_multiplatform_agentWalletCreateWalletResult *)doCopyCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode __attribute__((swift_name("doCopy(commandHandle:errorCode:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t commandHandle __attribute__((swift_name("commandHandle")));
+@property (readonly) uint32_t errorCode __attribute__((swift_name("errorCode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Wallet.OpenWalletResult")))
+@interface Kotlin_multiplatform_agentWalletOpenWalletResult : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentCallbackData>
+- (instancetype)initWithCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode walletHandle:(int32_t)walletHandle __attribute__((swift_name("init(commandHandle:errorCode:walletHandle:)"))) __attribute__((objc_designated_initializer));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (uint32_t)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (Kotlin_multiplatform_agentWalletOpenWalletResult *)doCopyCommandHandle:(int32_t)commandHandle errorCode:(uint32_t)errorCode walletHandle:(int32_t)walletHandle __attribute__((swift_name("doCopy(commandHandle:errorCode:walletHandle:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t commandHandle __attribute__((swift_name("commandHandle")));
+@property (readonly) uint32_t errorCode __attribute__((swift_name("errorCode")));
+@property (readonly) int32_t walletHandle __attribute__((swift_name("walletHandle")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1818,9 +2165,24 @@ __attribute__((swift_name("WalletRecord.Companion")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-- (void)addWallet:(Kotlin_multiplatform_agentWallet *)wallet type:(NSString *)type id:(NSString *)id value:(NSString *)value tagsJson:(NSString * _Nullable)tagsJson __attribute__((swift_name("add(wallet:type:id:value:tagsJson:)")));
-- (NSString *)getWallet:(Kotlin_multiplatform_agentWallet *)wallet type:(NSString *)type id:(NSString *)id optionsJson:(NSString *)optionsJson __attribute__((swift_name("get(wallet:type:id:optionsJson:)")));
-- (void)updateValueWallet:(Kotlin_multiplatform_agentWallet *)wallet type:(NSString *)type id:(NSString *)id value:(NSString *)value __attribute__((swift_name("updateValue(wallet:type:id:value:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)addWallet:(Kotlin_multiplatform_agentWallet *)wallet type:(NSString *)type id:(NSString *)id value:(NSString *)value tagsJson:(NSString * _Nullable)tagsJson completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("add(wallet:type:id:value:tagsJson:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getWallet:(Kotlin_multiplatform_agentWallet *)wallet type:(NSString *)type id:(NSString *)id optionsJson:(NSString *)optionsJson completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("get(wallet:type:id:optionsJson:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)updateValueWallet:(Kotlin_multiplatform_agentWallet *)wallet type:(NSString *)type id:(NSString *)id value:(NSString *)value completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("updateValue(wallet:type:id:value:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1875,6 +2237,42 @@ __attribute__((swift_name("CallbackHandlerKt")))
 @property (class, readonly) Kotlin_multiplatform_agentCallbackHandler *callbackHandler __attribute__((swift_name("callbackHandler")));
 @end;
 
+__attribute__((swift_name("KotlinRuntimeException")))
+@interface Kotlin_multiplatform_agentKotlinRuntimeException : Kotlin_multiplatform_agentKotlinException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+@end;
+
+__attribute__((swift_name("KotlinIllegalStateException")))
+@interface Kotlin_multiplatform_agentKotlinIllegalStateException : Kotlin_multiplatform_agentKotlinRuntimeException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+@end;
+
+__attribute__((swift_name("KotlinCancellationException")))
+@interface Kotlin_multiplatform_agentKotlinCancellationException : Kotlin_multiplatform_agentKotlinIllegalStateException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinUnit")))
+@interface Kotlin_multiplatform_agentKotlinUnit : Kotlin_multiplatform_agentBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)unit __attribute__((swift_name("init()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinArray")))
 @interface Kotlin_multiplatform_agentKotlinArray<T> : Kotlin_multiplatform_agentBase
@@ -1920,6 +2318,59 @@ __attribute__((swift_name("KotlinPair")))
 @property (readonly) B _Nullable second __attribute__((swift_name("second")));
 @end;
 
+__attribute__((swift_name("Kotlinx_coroutines_coreSendChannel")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreSendChannel
+@required
+- (BOOL)closeCause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("close(cause:)")));
+- (void)invokeOnCloseHandler:(void (^)(Kotlin_multiplatform_agentKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnClose(handler:)")));
+- (BOOL)offerElement:(id _Nullable)element __attribute__((swift_name("offer(element:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)sendElement:(id _Nullable)element completionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("send(element:completionHandler:)")));
+@property (readonly) BOOL isClosedForSend __attribute__((swift_name("isClosedForSend")));
+@property (readonly) BOOL isFull __attribute__((swift_name("isFull"))) __attribute__((unavailable("Will be removed in next releases without replacement")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause2> onSend __attribute__((swift_name("onSend")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreReceiveChannel")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreReceiveChannel
+@required
+- (void)cancelCause:(Kotlin_multiplatform_agentKotlinx_coroutines_coreCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+- (id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChannelIterator>)iterator __attribute__((swift_name("iterator()")));
+- (id _Nullable)poll __attribute__((swift_name("poll()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveWithCompletionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receive(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveOrClosedWithCompletionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receiveOrClosed(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveOrNullWithCompletionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receiveOrNull(completionHandler:)"))) __attribute__((deprecated("Deprecated in favor of receiveOrClosed and receiveOrNull extension")));
+@property (readonly) BOOL isClosedForReceive __attribute__((swift_name("isClosedForReceive")));
+@property (readonly) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause1> onReceive __attribute__((swift_name("onReceive")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause1> onReceiveOrClosed __attribute__((swift_name("onReceiveOrClosed")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause1> onReceiveOrNull __attribute__((swift_name("onReceiveOrNull"))) __attribute__((deprecated("Deprecated in favor of onReceiveOrClosed and onReceiveOrNull extension")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChannel")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreChannel <Kotlin_multiplatform_agentKotlinx_coroutines_coreSendChannel, Kotlin_multiplatform_agentKotlinx_coroutines_coreReceiveChannel>
+@required
+@end;
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinAtomicInt")))
 @interface Kotlin_multiplatform_agentKotlinAtomicInt : Kotlin_multiplatform_agentBase
@@ -1931,6 +2382,58 @@ __attribute__((swift_name("KotlinAtomicInt")))
 - (void)increment __attribute__((swift_name("increment()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property int32_t value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((swift_name("KotlinCoroutineContext")))
+@protocol Kotlin_multiplatform_agentKotlinCoroutineContext
+@required
+- (id _Nullable)foldInitial:(id _Nullable)initial operation:(id _Nullable (^)(id _Nullable, id<Kotlin_multiplatform_agentKotlinCoroutineContextElement>))operation __attribute__((swift_name("fold(initial:operation:)")));
+- (id<Kotlin_multiplatform_agentKotlinCoroutineContextElement> _Nullable)getKey:(id<Kotlin_multiplatform_agentKotlinCoroutineContextKey>)key __attribute__((swift_name("get(key:)")));
+- (id<Kotlin_multiplatform_agentKotlinCoroutineContext>)minusKeyKey:(id<Kotlin_multiplatform_agentKotlinCoroutineContextKey>)key __attribute__((swift_name("minusKey(key:)")));
+- (id<Kotlin_multiplatform_agentKotlinCoroutineContext>)plusContext:(id<Kotlin_multiplatform_agentKotlinCoroutineContext>)context __attribute__((swift_name("plus(context:)")));
+@end;
+
+__attribute__((swift_name("KotlinCoroutineContextElement")))
+@protocol Kotlin_multiplatform_agentKotlinCoroutineContextElement <Kotlin_multiplatform_agentKotlinCoroutineContext>
+@required
+@property (readonly) id<Kotlin_multiplatform_agentKotlinCoroutineContextKey> key __attribute__((swift_name("key")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreJob")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreJob <Kotlin_multiplatform_agentKotlinCoroutineContextElement>
+@required
+- (id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChildHandle>)attachChildChild:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreChildJob>)child __attribute__((swift_name("attachChild(child:)")));
+- (void)cancelCause:(Kotlin_multiplatform_agentKotlinx_coroutines_coreCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreCancellationException *)getCancellationException __attribute__((swift_name("getCancellationException()")));
+- (id<Kotlin_multiplatform_agentKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(Kotlin_multiplatform_agentKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
+- (id<Kotlin_multiplatform_agentKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(handler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)joinWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("join(completionHandler:)")));
+- (id<Kotlin_multiplatform_agentKotlinx_coroutines_coreJob>)plusOther:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreJob>)other __attribute__((swift_name("plus(other:)"))) __attribute__((unavailable("Operator '+' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`.")));
+- (BOOL)start __attribute__((swift_name("start()")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinSequence> children __attribute__((swift_name("children")));
+@property (readonly) BOOL isActive __attribute__((swift_name("isActive")));
+@property (readonly) BOOL isCancelled __attribute__((swift_name("isCancelled")));
+@property (readonly) BOOL isCompleted __attribute__((swift_name("isCompleted")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause0> onJoin __attribute__((swift_name("onJoin")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreDeferred")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreDeferred <Kotlin_multiplatform_agentKotlinx_coroutines_coreJob>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)awaitWithCompletionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("await(completionHandler:)")));
+- (id _Nullable)getCompleted __attribute__((swift_name("getCompleted()")));
+- (Kotlin_multiplatform_agentKotlinThrowable * _Nullable)getCompletionExceptionOrNull __attribute__((swift_name("getCompletionExceptionOrNull()")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause1> onAwait __attribute__((swift_name("onAwait")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -2011,6 +2514,74 @@ __attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
 @property (readonly) Kotlin_multiplatform_agentKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end;
 
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause2")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause2
+@required
+- (void)registerSelectClause2Select:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectInstance>)select param:(id _Nullable)param block:(id<Kotlin_multiplatform_agentKotlinSuspendFunction1>)block __attribute__((swift_name("registerSelectClause2(select:param:block:)")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreCancellationException")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreCancellationException : Kotlin_multiplatform_agentKotlinIllegalStateException
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (instancetype)initWithCause:(Kotlin_multiplatform_agentKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChannelIterator")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreChannelIterator
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)hasNextWithCompletionHandler:(void (^)(Kotlin_multiplatform_agentBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("hasNext(completionHandler:)")));
+- (id _Nullable)next __attribute__((swift_name("next()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause1")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause1
+@required
+- (void)registerSelectClause1Select:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectInstance>)select block:(id<Kotlin_multiplatform_agentKotlinSuspendFunction1>)block __attribute__((swift_name("registerSelectClause1(select:block:)")));
+@end;
+
+__attribute__((swift_name("KotlinCoroutineContextKey")))
+@protocol Kotlin_multiplatform_agentKotlinCoroutineContextKey
+@required
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreDisposableHandle
+@required
+- (void)dispose __attribute__((swift_name("dispose()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreChildHandle <Kotlin_multiplatform_agentKotlinx_coroutines_coreDisposableHandle>
+@required
+- (BOOL)childCancelledCause:(Kotlin_multiplatform_agentKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreChildJob <Kotlin_multiplatform_agentKotlinx_coroutines_coreJob>
+@required
+- (void)parentCancelledParentJob:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
+@end;
+
+__attribute__((swift_name("KotlinSequence")))
+@protocol Kotlin_multiplatform_agentKotlinSequence
+@required
+- (id<Kotlin_multiplatform_agentKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectClause0
+@required
+- (void)registerSelectClause0Select:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectInstance>)select block:(id<Kotlin_multiplatform_agentKotlinSuspendFunction0>)block __attribute__((swift_name("registerSelectClause0(select:block:)")));
+@end;
+
 __attribute__((swift_name("KotlinByteIterator")))
 @interface Kotlin_multiplatform_agentKotlinByteIterator : Kotlin_multiplatform_agentBase <Kotlin_multiplatform_agentKotlinIterator>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -2083,6 +2654,51 @@ __attribute__((swift_name("KotlinNothing")))
 @interface Kotlin_multiplatform_agentKotlinNothing : Kotlin_multiplatform_agentBase
 @end;
 
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreSelectInstance
+@required
+- (void)disposeOnSelectHandle:(id<Kotlin_multiplatform_agentKotlinx_coroutines_coreDisposableHandle>)handle __attribute__((swift_name("disposeOnSelect(handle:)")));
+- (id _Nullable)performAtomicTrySelectDesc:(Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicDesc *)desc __attribute__((swift_name("performAtomicTrySelect(desc:)")));
+- (void)resumeSelectWithExceptionException:(Kotlin_multiplatform_agentKotlinThrowable *)exception __attribute__((swift_name("resumeSelectWithException(exception:)")));
+- (BOOL)trySelect __attribute__((swift_name("trySelect()")));
+- (id _Nullable)trySelectOtherOtherOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp * _Nullable)otherOp __attribute__((swift_name("trySelectOther(otherOp:)")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinContinuation> completion __attribute__((swift_name("completion")));
+@property (readonly) BOOL isSelected __attribute__((swift_name("isSelected")));
+@end;
+
+__attribute__((swift_name("KotlinFunction")))
+@protocol Kotlin_multiplatform_agentKotlinFunction
+@required
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction1")))
+@protocol Kotlin_multiplatform_agentKotlinSuspendFunction1 <Kotlin_multiplatform_agentKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeP1:(id _Nullable)p1 completionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:completionHandler:)")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
+@protocol Kotlin_multiplatform_agentKotlinx_coroutines_coreParentJob <Kotlin_multiplatform_agentKotlinx_coroutines_coreJob>
+@required
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction0")))
+@protocol Kotlin_multiplatform_agentKotlinSuspendFunction0 <Kotlin_multiplatform_agentKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeWithCompletionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(completionHandler:)")));
+@end;
+
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
 @protocol Kotlin_multiplatform_agentKotlinx_serialization_coreSerializersModuleCollector
 @required
@@ -2112,6 +2728,135 @@ __attribute__((swift_name("KotlinKClass")))
 - (BOOL)isInstanceValue:(id _Nullable)value __attribute__((swift_name("isInstance(value:)")));
 @property (readonly) NSString * _Nullable qualifiedName __attribute__((swift_name("qualifiedName")));
 @property (readonly) NSString * _Nullable simpleName __attribute__((swift_name("simpleName")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreAtomicDesc")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicDesc : Kotlin_multiplatform_agentBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)completeOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *)op failure:(id _Nullable)failure __attribute__((swift_name("complete(op:failure:)")));
+- (id _Nullable)prepareOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *)op __attribute__((swift_name("prepare(op:)")));
+@property Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *atomicOp __attribute__((swift_name("atomicOp")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreOpDescriptor")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor : Kotlin_multiplatform_agentBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (BOOL)isEarlierThanThat:(Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor *)that __attribute__((swift_name("isEarlierThan(that:)")));
+- (id _Nullable)performAffected:(id _Nullable)affected __attribute__((swift_name("perform(affected:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> * _Nullable atomicOp __attribute__((swift_name("atomicOp")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode.PrepareOp")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp : Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor
+- (instancetype)initWithAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next desc:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc *)desc __attribute__((swift_name("init(affected:next:desc:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (void)finishPrepare __attribute__((swift_name("finishPrepare()")));
+- (id _Nullable)performAffected:(id _Nullable)affected __attribute__((swift_name("perform(affected:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *affected __attribute__((swift_name("affected")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *atomicOp __attribute__((swift_name("atomicOp")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc *desc __attribute__((swift_name("desc")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *next __attribute__((swift_name("next")));
+@end;
+
+__attribute__((swift_name("KotlinContinuation")))
+@protocol Kotlin_multiplatform_agentKotlinContinuation
+@required
+- (void)resumeWithResult:(id _Nullable)result __attribute__((swift_name("resumeWith(result:)")));
+@property (readonly) id<Kotlin_multiplatform_agentKotlinCoroutineContext> context __attribute__((swift_name("context")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreAtomicOp")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<__contravariant T> : Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)completeAffected:(T _Nullable)affected failure:(id _Nullable)failure __attribute__((swift_name("complete(affected:failure:)")));
+- (id _Nullable)decideDecision:(id _Nullable)decision __attribute__((swift_name("decide(decision:)")));
+- (id _Nullable)performAffected:(id _Nullable)affected __attribute__((swift_name("perform(affected:)")));
+- (id _Nullable)prepareAffected:(T _Nullable)affected __attribute__((swift_name("prepare(affected:)")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *atomicOp __attribute__((swift_name("atomicOp")));
+@property (readonly) id _Nullable consensus __attribute__((swift_name("consensus")));
+@property (readonly) BOOL isDecided __attribute__((swift_name("isDecided")));
+@property (readonly) int64_t opSequence __attribute__((swift_name("opSequence")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode : Kotlin_multiplatform_agentBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)addLastNode:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)node __attribute__((swift_name("addLast(node:)")));
+- (BOOL)addLastIfNode:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)node condition:(Kotlin_multiplatform_agentBoolean *(^)(void))condition __attribute__((swift_name("addLastIf(node:condition:)")));
+- (BOOL)addLastIfPrevNode:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)node predicate:(Kotlin_multiplatform_agentBoolean *(^)(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *))predicate __attribute__((swift_name("addLastIfPrev(node:predicate:)")));
+- (BOOL)addLastIfPrevAndIfNode:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)node predicate:(Kotlin_multiplatform_agentBoolean *(^)(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *))predicate condition:(Kotlin_multiplatform_agentBoolean *(^)(void))condition __attribute__((swift_name("addLastIfPrevAndIf(node:predicate:condition:)")));
+- (BOOL)addOneIfEmptyNode:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)node __attribute__((swift_name("addOneIfEmpty(node:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *> *)describeAddLastNode:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)node __attribute__((swift_name("describeAddLast(node:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *> *)describeRemoveFirst __attribute__((swift_name("describeRemoveFirst()")));
+- (void)helpRemove __attribute__((swift_name("helpRemove()")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)nextIfRemoved __attribute__((swift_name("nextIfRemoved()")));
+- (BOOL)remove __attribute__((swift_name("remove()")));
+- (id _Nullable)removeFirstIfIsInstanceOfOrPeekIfPredicate:(Kotlin_multiplatform_agentBoolean *(^)(id _Nullable))predicate __attribute__((swift_name("removeFirstIfIsInstanceOfOrPeekIf(predicate:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)removeFirstOrNull __attribute__((swift_name("removeFirstOrNull()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL isRemoved __attribute__((swift_name("isRemoved")));
+@property (readonly, getter=next_) id _Nullable next __attribute__((swift_name("next")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *nextNode __attribute__((swift_name("nextNode")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *prevNode __attribute__((swift_name("prevNode")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode.AbstractAtomicDesc")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc : Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicDesc
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)completeOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *)op failure:(id _Nullable)failure __attribute__((swift_name("complete(op:failure:)")));
+- (id _Nullable)failureAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)affected __attribute__((swift_name("failure(affected:)")));
+- (void)finishOnSuccessAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
+- (void)finishPreparePrepareOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
+- (id _Nullable)onPreparePrepareOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("onPrepare(prepareOp:)")));
+- (void)onRemovedAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected __attribute__((swift_name("onRemoved(affected:)")));
+- (id _Nullable)prepareOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreAtomicOp<id> *)op __attribute__((swift_name("prepare(op:)")));
+- (BOOL)retryAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)takeAffectedNodeOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor *)op __attribute__((swift_name("takeAffectedNode(op:)")));
+- (id)updatedNextAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable originalNext __attribute__((swift_name("originalNext")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T> : Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc
+- (instancetype)initWithQueue:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)queue node:(T)node __attribute__((swift_name("init(queue:node:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (void)finishOnSuccessAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
+- (void)finishPreparePrepareOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
+- (BOOL)retryAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)takeAffectedNodeOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor *)op __attribute__((swift_name("takeAffectedNode(op:)")));
+- (id)updatedNextAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
+@property (readonly) T node __attribute__((swift_name("node")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable originalNext __attribute__((swift_name("originalNext")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *queue __attribute__((swift_name("queue")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc")))
+@interface Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T> : Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc
+- (instancetype)initWithQueue:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)queue __attribute__((swift_name("init(queue:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (id _Nullable)failureAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)affected __attribute__((swift_name("failure(affected:)")));
+- (void)finishOnSuccessAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
+- (void)finishPreparePrepareOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
+- (BOOL)retryAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));
+- (Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)takeAffectedNodeOp:(Kotlin_multiplatform_agentKotlinx_coroutines_coreOpDescriptor *)op __attribute__((swift_name("takeAffectedNode(op:)")));
+- (id)updatedNextAffected:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable originalNext __attribute__((swift_name("originalNext")));
+@property (readonly) Kotlin_multiplatform_agentKotlinx_coroutines_coreLockFreeLinkedListNode *queue __attribute__((swift_name("queue")));
+@property (readonly) T _Nullable result __attribute__((swift_name("result")));
 @end;
 
 #pragma clang diagnostic pop

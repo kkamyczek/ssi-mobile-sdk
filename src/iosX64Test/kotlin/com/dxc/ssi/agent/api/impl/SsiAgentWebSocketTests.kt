@@ -1,5 +1,6 @@
 package com.dxc.ssi.agent.api.impl
 
+import co.touchlab.stately.collections.sharedMutableListOf
 import com.dxc.ssi.agent.model.messages.MessageEnvelop
 import com.dxc.ssi.agent.transport.AppSocket
 import kotlinx.coroutines.GlobalScope
@@ -13,7 +14,7 @@ class ApplicationApi {
             launch {
                 try {
                     var incomingMessagesQueue = mutableListOf<MessageEnvelop>()
-                    val ap: AppSocket = AppSocket("wss://echo.websocket.org", incomingMessagesQueue)
+                    val ap: AppSocket = AppSocket("wss://echo.websocket.org", sharedMutableListOf())
                     sleep(1)
                     ap.connect()
                     sleep(1)
